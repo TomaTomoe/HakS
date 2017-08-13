@@ -1,0 +1,13 @@
+{
+  "name": "livereload",
+  "version": "1.0.0",
+  "author": "ostinred",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-plumber": "~0.6.5",
+    "gulp-util": "^3.0.7",
+    "gulp-uglify": "^3.0.0"
+  }
+}

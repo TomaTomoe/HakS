@@ -28,6 +28,9 @@ body {
 }
 
 .hk-subscribe {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   color: #ffffff;
   text-decoration: none;
   margin-top: 50px;
@@ -39,10 +42,9 @@ body {
 
 .hk-subscribe-icon {
   display: inline-block;
-  height: 16px;
-  width: 16px;
-  background: #31a4b2;
+  color: #31a4b2;
   margin-right: 10px;
+  font-size: 16px;
 }
 
 .hk-subscribe-link {
@@ -56,15 +58,15 @@ body {
   margin-top: 50px;
 }
 
-.hk-social-link {
-  padding: 0px 23px;
+.hk-social-link a{
+  padding: 0px 20px;
+  color: #fff;
+  transition: .15s ease-in-out;
+  font-size: 20px;
 }
 
-.hk-social-icon {
-  display: block;
-  height: 16px;
-  width: 16px;
-  background: #ffffff;
+.hk-social-link a:hover{
+  color: #31a4b2;
 }
 
 .hk-report-button {
@@ -84,8 +86,10 @@ body {
   color: #ffffff;
   margin-left: 35px;
   text-decoration: none;
+  transition: .15s ease-in-out;
 }
 
+#hk-language-select a:hover,
 #hk-language-select a.active {
   color: #31a4b2;
   text-decoration: underline;
@@ -123,15 +127,13 @@ body {
   color: #31a4b2;
   font-size: 16px;
   font-weight: 900;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .hk-video {
-  display: inline-block;
-  height: 16px;
-  width: 16px;
-  background: #31a4b2;
-  margin-right: 8px;
+  color: #31a4b2;
+  margin-right: 10px;
+  font-size: 20px;
 }
 
 .hk-text_blue {
@@ -300,7 +302,7 @@ body {
 /*SLIDE 2*/
 
 .hk-about {
-  background-color: #313131;
+  background-color: #303030;
 }
 
 .hk-about h2 {
@@ -328,12 +330,27 @@ hr {
 }
 
 .hk-about-quote_text {
+  position: relative;
+  z-index: 1;
   font-size: 30px;
   line-height: 40px;
   font-weight: 100;
   color: #31a4b2;
   margin-top: 60px;
 }
+
+.hk-about-quote_text:before {
+  content: '“';
+  position: absolute;
+  top: 90px;
+  left: -15px;
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 500;
+  font-size: 400px;
+  color: #383838;
+  z-index: -1;
+}
+
 
 p.hk-about-descr {
   font-size: 16px;
@@ -398,7 +415,7 @@ p.hk-about-descr {
 .hk-timeline-line-2 .hk-cell-1 {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 90px;
+  margin-left: 77px;
 }
 
 .hk-timeline-line-2 .hk-cell-2 {
@@ -416,7 +433,7 @@ p.hk-about-descr {
 .hk-timeline-line-2 .hk-cell-4 {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 100px;
+  margin-left: 92px;
 }
 
 .hk-timeline-line-3 {
@@ -451,7 +468,7 @@ p.hk-about-descr {
 .hk-timeline-line-4 .hk-cell-1 {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 40px;
+  margin-left: 35px;
 }
 
 .hk-timeline-line-4 .hk-cell-2 {
@@ -469,7 +486,7 @@ p.hk-about-descr {
 .hk-timeline-line-4 .hk-cell-4 {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 130px;
+  margin-left: 100px;
 }
 
 .hk-hacken {
@@ -543,6 +560,10 @@ p.hk-about-descr {
 
 .hk-milestones {
   background-color: #282828;
+}
+
+.hk-milestones .absolute-center {
+  width: 72%;
 }
 
 .hk-milestones .hk-central_block {
@@ -686,7 +707,6 @@ color: #55c3c8;
   position: absolute;
 }
 
-
 .hk-burning {
   background-color: #282828;
 }
@@ -720,4 +740,108 @@ color: #55c3c8;
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+
+.margin-none {
+  margin: 0 !important;
+}
+
+.not-relative {
+  position: static !important;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+h2 {
+  margin: 125px 0;
+}
+
+.hk-about,
+.hk-token_sale,
+.hk-partners,
+.hk-bounty,
+.hk-details {
+  position: relative;
+}
+
+.hk-about:after,
+.hk-token_sale:after,
+.hk-partners:after,
+.hk-bounty:after,
+.hk-details:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .1;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #303030;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 90% 100%;
+  background-position: top right;
+  background-image: url(./../img/lines-dots-bg.png);
+}
+
+.hk-token_sale {
+  background-color: #313131;
+}
+
+.hk-main,
+.hk-timeline,
+.hk-burning,
+.hk-team,
+.hk-bonuses {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hk-main {
+  background-image: url(./../img/first-block-bg.png);
+}
+
+.hk-timeline {
+  background-image: url(./../img/timeline-bg.png);
+}
+
+.hk-burning {
+  background-image: url(./../img/timeline-bg.png);
+}
+
+.hk-team {
+  background-image: url(./../img/team-bg.png);
+}
+
+.hk-bonuses {
+  background-image: url(./../img/bonuses-bg.png);
+}
+
+h2 + hr {
+  position: relative;
+  transform: translateY(-80px);
+}
+
+.main-page-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 1;
+}
+
+.info-icon {
+  position: relative;
+  top: 3px;
+  font-size: 23px;
+  margin-left: 5px;
+  color: #55c3c8;
 }
