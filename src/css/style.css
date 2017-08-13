@@ -28,6 +28,9 @@ body {
 }
 
 .hk-subscribe {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   color: #ffffff;
   text-decoration: none;
   margin-top: 50px;
@@ -39,10 +42,9 @@ body {
 
 .hk-subscribe-icon {
   display: inline-block;
-  height: 16px;
-  width: 16px;
-  background: #31a4b2;
+  color: #31a4b2;
   margin-right: 10px;
+  font-size: 16px;
 }
 
 .hk-subscribe-link {
@@ -794,4 +796,12 @@ h2 + hr {
   justify-content: flex-start;
   align-items: center;
   line-height: 1;
+}
+
+.info-icon {
+  position: relative;
+  top: 3px;
+  font-size: 23px;
+  margin-left: 5px;
+  color: #55c3c8;
 }
