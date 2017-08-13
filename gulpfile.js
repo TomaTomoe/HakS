@@ -34,12 +34,4 @@ gulp.task('minify-js', function () {
         .pipe(gulp.dest(src.jsmin))
 });
 
-gulp.task('autoprefix', function () {
-    return gulp.src(src.css)
-         .pipe(autoprefixer({
-             browsers: ['last 50 versions'],
-             cascade: false
-         }))
-});
-
 gulp.task('default', ['serve']);
