@@ -13,7 +13,10 @@ body {
   height: 100vh;
   position: relative;
 }
+
+
 /*SLIDE 1*/
+
 .hk-main {
   background-color: #282828;
 }
@@ -93,7 +96,7 @@ body {
   font-weight: 100;
   color: #ffffff;
   text-transform: uppercase;
-      margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .hk-main .hk-central_block p {
@@ -180,8 +183,7 @@ body {
   margin-right: 80px;
 }
 
-.hk-nav-item.active,
-.hk-nav-item:hover {
+.hk-nav-item.active, .hk-nav-item:hover {
   color: #31a4b2;
 }
 
@@ -189,11 +191,10 @@ body {
   visibility: hidden;
   transition: all 0.3s;
   padding-right: 30px;
-    cursor: context-menu;
+  cursor: context-menu;
 }
 
-.hk-nav-item.active .hk-nav-item_name,
-.hk-nav-item:hover .hk-nav-item_name {
+.hk-nav-item.active .hk-nav-item_name, .hk-nav-item:hover .hk-nav-item_name {
   visibility: visible;
 }
 
@@ -209,8 +210,7 @@ body {
   transition: all 0.3s;
 }
 
-.hk-nav-item.active .hk-menu-circle,
-.hk-nav-item:hover .hk-menu-circle {
+.hk-nav-item.active .hk-menu-circle, .hk-nav-item:hover .hk-menu-circle {
   box-shadow: 0 0 0 6px rgba(49, 164, 178, 0.2);
   background: #31a4b2;
 }
@@ -226,8 +226,7 @@ body {
   transition: all 0.3s;
 }
 
-.hk-nav-item.active .hk-menu-circle::after,
-.hk-nav-item:hover .hk-menu-circle::after {
+.hk-nav-item.active .hk-menu-circle::after, .hk-nav-item:hover .hk-menu-circle::after {
   content: " ";
   position: absolute;
   top: 3px;
@@ -296,170 +295,210 @@ body {
   padding-top: 46px;
   padding-left: 2vw;
 }
+
+
 /*SLIDE 2*/
+
 .hk-about {
   background-color: #313131;
 }
 
 .hk-about h2 {
-    font-size: 46px;
-    font-weight: 100;
-    text-transform: uppercase;
+  font-size: 46px;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 hr {
-    width: 135px;
-    margin-left: 0;
-    border-color: #31a4b2;
+  width: 135px;
+  margin-left: 0;
+  border-color: #31a4b2;
 }
 
-.hk-central_block > div {
-    width: calc(100% - 240px);
-        position: relative;
+.hk-central_block>div {
+  width: calc(100% - 240px);
+  position: relative;
 }
 
 .hk-about p {
   width: 33%;
-float: left;
-padding-left: 90px;
-box-sizing: border-box;
+  float: left;
+  padding-left: 90px;
+  box-sizing: border-box;
 }
 
 .hk-about-quote_text {
-    font-size: 30px;
-    line-height: 40px;
-    font-weight: 100;
-    color: #31a4b2;
-        margin-top: 60px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 100;
+  color: #31a4b2;
+  margin-top: 60px;
 }
 
 p.hk-about-descr {
-    font-size: 16px;
-    font-weight: 100;
-    line-height: 30px;
-    max-width: 400px;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 30px;
+  max-width: 400px;
 }
+
+
 /*SLIDE 3*/
+
 .hk-timeline {
   background-color: #282828;
 }
+
 .hk-timeline .hk-central_block {
   align-items: baseline;
 }
-.hk-timeline .hk-central_block > div {
+
+.hk-timeline .hk-central_block>div {
   margin-top: 50px;
 }
+
 .hk-timeline h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 46px;
-    font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: 100;
 }
 
 .hk-timeline-figure {
-    height: 420px;
-    width: 1000px;
-    margin: auto;
-    background: url("../img/hk-timeline.png");
-    background-repeat: no-repeat;
-    background-position: 50% 60px;
-    margin-top: 100px;
+  height: 420px;
+  width: 1000px;
+  margin: auto;
+  background: url("../img/hk-timeline.png");
+  background-repeat: no-repeat;
+  background-position: 50% 60px;
+  margin-top: 100px;
 }
 
 .hk-timeline-line-1 {
-    height: 30px;
-    font-size: 22px;
-    font-weight: 300;
-    padding-top: 28px;
-    margin-left: 85px;
+  height: 30px;
+  font-size: 22px;
+  font-weight: 300;
+  padding-top: 28px;
+  margin-left: 85px;
 }
 
-.hk-timeline-line-1 .hk-cell-2,
-.hk-timeline-line-1 .hk-cell-3,
-.hk-timeline-line-1 .hk-cell-4 {
-    margin-left: 90px;
+.hk-timeline-line-1 .hk-cell-2, .hk-timeline-line-1 .hk-cell-3, .hk-timeline-line-1 .hk-cell-4 {
+  margin-left: 90px;
 }
 
 .hk-timeline-line-2 {
-    height: 90px;
-    font-size: 16px;
-    font-weight: 100;
-    color: #31a4b2;
-    padding-top: 49px;
-    margin-left: 85px;
+  height: 90px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #31a4b2;
+  padding-top: 49px;
+  margin-left: 85px;
 }
+
 .hk-timeline-line-2 .hk-cell-1 {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 90px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 90px;
 }
+
 .hk-timeline-line-2 .hk-cell-2 {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 75px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 75px;
 }
+
 .hk-timeline-line-2 .hk-cell-3 {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 90px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 90px;
 }
+
 .hk-timeline-line-2 .hk-cell-4 {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 100px;
 }
 
 .hk-timeline-line-3 {
-    height: 30px;
-    font-size: 22px;
-    font-weight: 300;
-    padding-top: 54px;
-    margin-left: 85px;
+  height: 30px;
+  font-size: 22px;
+  font-weight: 300;
+  padding-top: 54px;
+  margin-left: 85px;
 }
 
 .hk-timeline-line-3 .hk-cell-2 {
-    margin-left: 38px;
+  margin-left: 38px;
 }
 
 .hk-timeline-line-3 .hk-cell-3 {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .hk-timeline-line-3 .hk-cell-4 {
-    margin-left: 65px;
+  margin-left: 65px;
 }
 
 .hk-timeline-line-4 {
-    height: 90px;
-    font-size: 16px;
-    font-weight: 100;
-    color: #31a4b2;
-    padding-top: 49px;
-    margin-left: 85px;
+  height: 90px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #31a4b2;
+  padding-top: 49px;
+  margin-left: 85px;
 }
+
 .hk-timeline-line-4 .hk-cell-1 {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 40px;
 }
+
 .hk-timeline-line-4 .hk-cell-2 {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 75px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 75px;
 }
+
 .hk-timeline-line-4 .hk-cell-3 {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 80px;
 }
+
 .hk-timeline-line-4 .hk-cell-4 {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 130px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 130px;
 }
 
 .hk-hacken {
   background-color: #303030;
+}
+
+.hk-hacken .hk-central_block {
+  align-items: baseline;
+}
+
+.hk-hacken .hk-central_block>div {
+  margin-top: 50px;
+}
+
+.hk-hacken h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: 100;
+}
+
+.hk-hacken-figure {
+  height: 500px;
+  width: 800px;
+  margin: auto;
+  background: url("../img/hacken-bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-top: 100px;
 }
 
 .hk-milestones {
