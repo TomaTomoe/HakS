@@ -711,6 +711,59 @@ color: #55c3c8;
   background-color: #282828;
 }
 
+.hk-burning h2 {
+  font-size: 46px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+hr {
+  width: 135px;
+  margin-left: 0;
+  border-color: #31a4b2;
+}
+
+.hk-central_block>div {
+  width: calc(100% - 240px);
+  position: relative;
+}
+
+.hk-burning p {
+  width: 33%;
+  float: left;
+  padding-left: 90px;
+  box-sizing: border-box;
+}
+
+.hk-burning-quote_text {
+  position: relative;
+  z-index: 1;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 100;
+  color: #31a4b2;
+  margin-top: 60px;
+}
+
+.hk-burning-quote_text:before {
+    content: '“';
+    position: absolute;
+    top: 90px;
+    left: -15px;
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 500;
+    font-size: 400px;
+    color: #383838;
+    z-index: -1;
+}
+
+p.hk-burning-descr {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 30px;
+  max-width: 400px;
+}
+
 .hk-details {
   background-color: #313131;
 }
@@ -758,11 +811,6 @@ color: #55c3c8;
   transform: translate(-50%,-50%);
 }
 
-
-h2 {
-  margin: 125px 0;
-}
-
 .hk-about,
 .hk-token_sale,
 .hk-partners,
@@ -800,7 +848,7 @@ h2 {
 .hk-burning,
 .hk-team,
 .hk-bonuses {
-  background-attachment: fixed;
+  background-attachment: local;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -827,8 +875,7 @@ h2 {
 }
 
 h2 + hr {
-  position: relative;
-  transform: translateY(-80px);
+  margin: 50px 0;
 }
 
 .main-page-links {
