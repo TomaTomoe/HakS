@@ -658,6 +658,14 @@ color: #55c3c8;
     line-height: 24px;
 }
 
+.hk-white {
+  color: #ffffff;
+}
+
+.hk-boldest {
+  font-weight: 900;
+}
+
 .hk-bolder {
   font-weight: 700;
 }
@@ -666,6 +674,38 @@ color: #55c3c8;
   font-weight: 300;
 }
 
+.hk-token_sale {
+  background-color: #2f2f2f;
+}
+.hk-token_sale .hk-central_block {
+  align-items: baseline;
+}
+
+.hk-token_sale .hk-central_block>div {
+  margin-top: 50px;
+}
+
+.hk-token_sale h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: 100;
+}
+
+.hk-token_sale-figure {
+  height: 500px;
+  width: 100%;
+  margin: auto;
+  background: url("../img/hk-token_sale.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-top: 100px;
+  position: relative;
+}
+
+.hk-token_sale-figure > div {
+  position: absolute;
+}
 
 .hk-burning {
   background-color: #282828;
