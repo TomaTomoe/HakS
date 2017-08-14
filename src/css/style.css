@@ -1201,4 +1201,53 @@ h2+hr {
   h2+hr {
     margin: 30px 0;
   }
+  .hk-milestones .absolute-center {
+    width: calc(100% - 320px);
+    left: 80px;
+    transform: translate(0%, -50%);
+  }
+  .hk-milestones-block p,
+  .hk-milestones-block_headers>div {
+    padding: 0 10px;
+  }
+
+.hk-burning-quote_text {
+    width: 30%;
+    font-size: 22px;
+    padding-left: 80px;
+}
+.hk-burning p {
+    width: 33%;
+    padding-left: 50px;
+}
+.hk-details-quote_text {
+    font-size: 24px;
+}
+.hk-details-panes_container {
+    width: 73%;
+    padding-left: 80px;
+}
+.hk-details-quote_text {
+    font-size: 24px;
+}
+.hk-details p {
+    width: 27%;
+}
+.hk-details-pane,
+.hk-details-pane h5 {
+    font-size: 18px;
+}
+.hk-bonus_timer {
+    height: 300px;
+    width: 500px;
+  }
+  .hk-bonuses p {
+    font-size: 26px;
+  }
+  .hk-bonuse-circle_container {
+    width: calc(100% - 520px);
+}
+h2 {
+    font-size: 40px !important;
+}
 }
