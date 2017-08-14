@@ -15,6 +15,11 @@
 
 <body>
   <div class="hk-screen hk-main">
+    <div class="video-container">
+      <video id="video-loader" preload autoplay>
+          <source src="./src/video/onload.mov" />
+      </video>
+    </div>
     <header class="hk-header">
       <a class="hk-subscribe" href="">
         <span class="hk-subscribe-icon"><i class="zmdi zmdi-email"></i></span>
@@ -96,11 +101,52 @@
     <div class="hk-timer">
       <div class="hk-time">
         <span class="hk-time-header">Time to start</span>
+
+        <div class="hk-bonus_timer-time__main">
+
+          <div class="hk-bonus_timer-timetick__main">
+            <div id="timetick-day-main" class="timetick-time day">
+              01
+            </div>
+            <div class="timetick-desc">
+              days
+            </div>
+          </div>
+
+          <div class="hk-bonus_timer-timetick__main">
+            <div id="timetick-hour-main" class="timetick-time">
+              14
+            </div>
+            <div class="timetick-desc">
+              hours
+            </div>
+          </div>
+
+          <div class="hk-bonus_timer-timetick__main">
+            <div id="timetick-minute-main" class="timetick-time">
+              03
+            </div>
+            <div class="timetick-desc">
+              minutes
+            </div>
+          </div>
+
+          <div class="hk-bonus_timer-timetick__main">
+            <div id="timetick-second-main" class="timetick-time">
+              49
+            </div>
+            <div class="timetick-desc">
+              seconds
+            </div>
+          </div>
+      </div>
+      </div>
       </div>
       <div class="hk-amount">
         <span class="hk-amount-header">Amount of money raised</span>
         <span class="hk-amount-number">36</span>
       </div>
+
     </div>
   </div>
   <div class="hk-screen hk-about">
@@ -312,6 +358,45 @@
           <div class="hk-bonus_timer">
             <p>Time to complete current bonuse:</p>
             <hr />
+            <div class="hk-bonus_timer-time">
+
+              <div class="hk-bonus_timer-timetick">
+                <div id="timetick-day" class="timetick-time day">
+                  01
+                </div>
+                <div class="timetick-desc">
+                  days
+                </div>
+              </div>
+
+              <div class="hk-bonus_timer-timetick">
+                <div id="timetick-hour" class="timetick-time">
+                  14
+                </div>
+                <div class="timetick-desc">
+                  hours
+                </div>
+              </div>
+
+              <div class="hk-bonus_timer-timetick">
+                <div id="timetick-minute" class="timetick-time">
+                  03
+                </div>
+                <div class="timetick-desc">
+                  minutes
+                </div>
+              </div>
+
+              <div class="hk-bonus_timer-timetick">
+                <div id="timetick-second" class="timetick-time">
+                  49
+                </div>
+                <div class="timetick-desc">
+                  seconds
+                </div>
+              </div>
+
+            </div>
           </div>
           <div class="hk-bonuse-circle_container">
             <div class="hk-bonus_circle bonus_active">

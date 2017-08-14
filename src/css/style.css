@@ -358,6 +358,19 @@ p.hk-about-descr {
 }
 
 
+.video-container {
+  position: absolute;
+  top: 0;
+  z-index: 8;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+#video-loader {
+  width: 100%;
+}
+
 /*SLIDE 3*/
 
 .hk-timeline {
@@ -859,6 +872,42 @@ p.hk-burning-descr {
   float: left;
   position: relative;
 }
+
+.hk-bonus_timer-time {
+  height: calc(100% - 95px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hk-bonus_timer-time__main {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hk-bonus_timer-time__main .timetick-time {
+  color: white;
+  margin-top: 0;
+}
+
+.timetick-time {
+  padding-bottom: 10px;
+  color: #31a4b2;
+  font-size: 40px;
+  font-weight: 900;
+  display: block;
+  margin-top: 40px;
+}
+
+.timetick-desc {
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 30px;
+}
+
 
 .hk-bonuse-circle_container {
   display: block;
