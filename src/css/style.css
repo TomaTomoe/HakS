@@ -929,13 +929,58 @@ h2 + hr {
 }
 
 .hk-team .not-relative {
-  display: flex;
-  flex-direction: row;
+  /*display: flex;*/
+  /*flex-direction: row;*/
 }
+
+.hk-team .not-relative:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.left-side {
+  float: left;
+}
+
+.team-slider {
+  margin-top: 125px;
+}
+
+.team-slider .swiper-container {
+  width: 1000px;
+}
+
+.team-slider .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 .team-slider .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 400px;
+  max-width: 100%;
+  height: auto;
   border-bottom: 1px solid #31a4b2;
+}
+
+.team-slider .name {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #31a4b2;
+  text-transform: uppercase;
+}
+
+.team-slider .work {
+  font-size: 16px;
+  line-height: 1.3;
+  margin-top: 4px;
+}
+
+.team-slider .member-description {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 20px;
 }
