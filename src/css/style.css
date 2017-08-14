@@ -867,9 +867,16 @@ p.hk-burning-descr {
   align-items: center;
 }
 
-.hk-bonus_timer-timetick {
-  text-align: center;
-  margin: 10px;
+.hk-bonus_timer-time__main {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hk-bonus_timer-time__main .timetick-time {
+  color: white;
+  margin-top: 0;
 }
 
 .timetick-time {

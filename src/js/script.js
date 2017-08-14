@@ -24,6 +24,12 @@ $(document).ready(function () {
           document.getElementById("timetick-second").innerHTML = seconds;
 
 
+          document.getElementById("timetick-day-main").innerHTML = days;
+          document.getElementById("timetick-hour-main").innerHTML = hours;
+          document.getElementById("timetick-minute-main").innerHTML = minutes;
+          document.getElementById("timetick-second-main").innerHTML = seconds;
+
+
           // If the count down is over, write some text
           if (distance < 0) {
               clearInterval(x);
