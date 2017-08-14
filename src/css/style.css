@@ -860,6 +860,35 @@ p.hk-burning-descr {
   position: relative;
 }
 
+.hk-bonus_timer-time {
+  height: calc(100% - 95px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hk-bonus_timer-timetick {
+  text-align: center;
+  margin: 10px;
+}
+
+.timetick-time {
+  padding-bottom: 10px;
+  color: #31a4b2;
+  font-size: 40px;
+  font-weight: 900;
+  display: block;
+  margin-top: 40px;
+}
+
+.timetick-desc {
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+
 .hk-bonuse-circle_container {
   display: block;
   float: left;
