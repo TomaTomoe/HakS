@@ -1253,7 +1253,7 @@ h2+hr {
 }
 
 .team-slider {
-  margin-top: 125px;
+  margin-top: 60px;
 }
 
 .team-slider .swiper-container {
@@ -1289,9 +1289,11 @@ h2+hr {
 }
 
 .team-slider .member-description {
-  font-size: 14px;
-  line-height: 1.6;
-  margin-top: 20px;
+  font-size: 15px;
+      line-height: 1.6;
+      text-align: justify;
+      font-weight: 100;
+          margin-top: 20px;
 }
 
 @media (min-width: 1224px) and (max-width: 1539px) {
