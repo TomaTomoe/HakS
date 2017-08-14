@@ -1,6 +1,27 @@
 $(document).ready(function () {
-    $(document).ready(function() {
-      var countDownDate = new Date("Sep 5, 2017 15:37:25").getTime();
+    var swiper = new Swiper('#swiper-container-partners', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 4,
+        paginationClickable: true,
+        spaceBetween: 30,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        pagination: '.swiper-pagination',
+        paginationType: 'fraction'
+    });
+
+    var swiper2 = new Swiper('#swiper-container-team', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 50,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        pagination: '.swiper-pagination',
+        paginationType: 'fraction'
+    });
+  
+   var countDownDate = new Date("Sep 5, 2017 15:37:25").getTime();
 
 // Update the count down every 1 second
       var x = setInterval(function() {
@@ -44,7 +65,4 @@ $(document).ready(function () {
         console.log('12312');
         $('.video-container')[0].style.display = 'none'
       }
-
-
-    });
 });
