@@ -247,7 +247,7 @@ body {
 }
 
 .hk-main .hk-central_block {
-  height: calc(100vh - 230px);
+  height: calc(100vh - 120px);
 }
 
 .hk-timer {
@@ -786,7 +786,7 @@ p.hk-burning-descr {
 .hk-details .hk-central_block>div {
   margin-top: 50px;
 }
-
+  
 .hk-details h2 {
   font-size: 46px;
   font-weight: 100;
@@ -800,7 +800,7 @@ p.hk-burning-descr {
   line-height: 40px;
   font-weight: 100;
   color: #31a4b2;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .hk-details p {
@@ -913,16 +913,18 @@ p.hk-burning-descr {
 }
 
 .hk-bonuse-circle_container {
-  display: block;
-  float: left;
-  width: calc(100% - 640px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 50px;
   max-width: 540px;
 }
 
 .hk-bonus_circle {
   height: 150px;
   width: 150px;
-  margin-left: calc(50% - 152px);
+  /*margin-left: calc(50% - 152px);*/
+  margin-left: 50px;
   margin-bottom: 65px;
   border-radius: 50%;
   display: inline-block;
@@ -985,7 +987,7 @@ p.hk-burning-descr {
   line-height: 40px;
   font-weight: 100;
   color: #31a4b2;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 
 .hk-bounty p {
@@ -1411,7 +1413,7 @@ h2+hr {
     font-size: 26px;
   }
   .hk-bonuse-circle_container {
-    width: calc(100% - 520px);
+    /*width: calc(100% - 520px);*/
 }
 h2 {
     font-size: 40px !important;
