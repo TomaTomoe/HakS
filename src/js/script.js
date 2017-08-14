@@ -36,5 +36,15 @@ $(document).ready(function () {
               document.getElementById("demo").innerHTML = "EXPIRED";
           }
       }, 1000);
+
+
+      //comment this all to have chance to make changes
+      document.getElementById('video-loader').addEventListener('ended', myHandler, false);
+      function myHandler(e) {
+        console.log('12312');
+        $('.video-container')[0].style.display = 'none'
+      }
+
+
     });
 });
