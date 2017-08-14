@@ -710,22 +710,17 @@ color: #55c3c8;
 .hk-burning {
   background-color: #282828;
 }
+.hk-burning .hk-central_block {
+    align-items: baseline;
+}
 
+.hk-burning .hk-central_block>div {
+    margin-top: 50px;
+}
 .hk-burning h2 {
   font-size: 46px;
   font-weight: 100;
   text-transform: uppercase;
-}
-
-hr {
-  width: 135px;
-  margin-left: 0;
-  border-color: #31a4b2;
-}
-
-.hk-central_block>div {
-  width: calc(100% - 240px);
-  position: relative;
 }
 
 .hk-burning p {
@@ -766,6 +761,62 @@ p.hk-burning-descr {
 
 .hk-details {
   background-color: #313131;
+}
+
+.hk-details .hk-central_block {
+    align-items: baseline;
+}
+
+.hk-details .hk-central_block>div {
+    margin-top: 50px;
+}
+
+.hk-details h2 {
+  font-size: 46px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+
+.hk-details-quote_text {
+  position: relative;
+  z-index: 1;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 100;
+  color: #31a4b2;
+  margin-top: 60px;
+}
+
+
+.hk-details p {
+  width: 33%;
+  float: left;
+  padding-left: 90px;
+  box-sizing: border-box;
+}
+
+.hk-details-panes_container {
+  float: left;
+  width: 60%;
+  padding-left: 80px;
+box-sizing: border-box;
+}
+
+.hk-details-pane {
+  width: 33%;
+  min-width: 150px;
+  float: left;
+  box-sizing: border-box;
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 28px;
+}
+
+.hk-details-pane h5 {
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .hk-bonuses {
