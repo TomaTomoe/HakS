@@ -697,6 +697,7 @@ p.hk-about-descr {
   background: url("../img/hk-token_sale.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-size: contain;
   margin-top: 100px;
   position: relative;
 }
@@ -788,16 +789,15 @@ p.hk-burning-descr {
 }
 
 .hk-details p {
-  width: 33%;
+  width: 29%;
   float: left;
-  padding-left: 90px;
   box-sizing: border-box;
 }
 
 .hk-details-panes_container {
   float: left;
-  width: 60%;
-  padding-left: 80px;
+  width: 71%;
+  padding-left: 40px;
   box-sizing: border-box;
 }
 
@@ -853,7 +853,7 @@ p.hk-burning-descr {
 
 .hk-bonus_timer {
   height: 340px;
-  width: 640px;
+  width: 620px;
   border: 10px solid #31a4b2;
   display: block;
   float: left;
@@ -863,13 +863,13 @@ p.hk-burning-descr {
 .hk-bonuse-circle_container {
   display: block;
   float: left;
-  width: 470px;
+  width: calc(100% - 640px);
 }
 
 .hk-bonus_circle {
   height: 150px;
   width: 150px;
-  margin-left: 80px;
+  margin-left: calc(50% - 152px);
   margin-bottom: 65px;
   border-radius: 50%;
   display: inline-block;
@@ -936,16 +936,15 @@ p.hk-burning-descr {
 }
 
 .hk-bounty p {
-  width: 33%;
+  width: 29%;
   float: left;
-  padding-left: 90px;
   box-sizing: border-box;
 }
 
 .hk-bounty-panes_container {
   float: left;
-  width: 60%;
-  padding-left: 80px;
+  width: 71%;
+  padding-left: 40px;
   box-sizing: border-box;
 }
 
