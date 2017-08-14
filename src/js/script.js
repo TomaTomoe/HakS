@@ -69,7 +69,11 @@ $(document).ready(function () {
           onLeave: function(index, nextIndex, direction){
             console.log('nextIndex', nextIndex)
             $('.hk-nav-item').removeClass('active')
-            setTimeout(() => $($('.hk-nav-item')[nextIndex-2]).addClass('active'), 100)
+            if (nextIndex === 12) {
+              setTimeout(() => $($('.hk-nav-item')[nextIndex-1]).addClass('active'), 100)
+            } else {
+              setTimeout(() => $($('.hk-nav-item')[nextIndex-2]).addClass('active'), 100)
+            }
           }
         });
         }
@@ -77,5 +81,6 @@ $(document).ready(function () {
 });
 
 function onNavClick(e, i) {
+  console.log('asdas', i)
   $.fn.fullpage.moveTo(i+1);
 }
