@@ -81,6 +81,5 @@ $(document).ready(function () {
 });
 
 function onNavClick(e, i) {
-  console.log('asdas', i)
   $.fn.fullpage.moveTo(i+1);
 }
