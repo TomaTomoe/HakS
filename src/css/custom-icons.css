@@ -24,12 +24,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-socials {
+    vertical-align: -7px;
+}
+
+.icon-socials.ico-bitcoin {
+    vertical-align: -11px;
+}
+
 .ico-messenger:before {
   content: "\e900";
+  font-size: 32px;
 }
 .ico-bitcoin:before {
   content: "\e901";
+  font-size: 38px;
 }
 .ico-slack:before {
   content: "\e902";
+  font-size: 32px;
 }

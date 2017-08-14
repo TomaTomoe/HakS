@@ -63,6 +63,7 @@ body {
   color: #fff;
   transition: .15s ease-in-out;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .hk-social-link a:hover {
@@ -786,7 +787,7 @@ p.hk-burning-descr {
 .hk-details .hk-central_block>div {
   margin-top: 50px;
 }
-  
+
 .hk-details h2 {
   font-size: 46px;
   font-weight: 100;
