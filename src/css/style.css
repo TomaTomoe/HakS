@@ -924,8 +924,7 @@ p.hk-burning-descr {
 .hk-bonus_circle {
   height: 150px;
   width: 150px;
-  /*margin-left: calc(50% - 152px);*/
-  margin-left: 50px;
+  margin-left: calc(50% - 152px);
   margin-bottom: 65px;
   border-radius: 50%;
   display: inline-block;
@@ -1418,5 +1417,14 @@ h2+hr {
 }
 h2 {
     font-size: 40px !important;
+}
+.team-slider .swiper-slide .team-image, .team-image-active {
+    max-width: 250px;
+}
+.hk-team .hk-central_block>div.not-relative {
+    margin-top: 25px;
+}
+.team-slider {
+    margin-top: 10px;
 }
 }
