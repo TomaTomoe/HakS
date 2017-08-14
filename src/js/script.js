@@ -20,7 +20,7 @@ $(document).ready(function () {
         pagination: '.swiper-pagination',
         paginationType: 'fraction'
     });
-  
+
    var countDownDate = new Date("Sep 5, 2017 15:37:25").getTime();
 
 // Update the count down every 1 second
@@ -60,9 +60,22 @@ $(document).ready(function () {
 
 
       //comment this all to have chance to make changes
-      document.getElementById('video-loader').addEventListener('ended', myHandler, false);
-      function myHandler(e) {
-        console.log('12312');
+      document.getElementById('video-loader').addEventListener('ended', handleVideoEnd, false);
+      function handleVideoEnd(e) {
         $('.video-container')[0].style.display = 'none'
-      }
+
+        $('#fullpage').fullpage({
+          menu: '.hk-navigation',
+          onLeave: function(index, nextIndex, direction){
+            console.log('nextIndex', nextIndex)
+            $('.hk-nav-item').removeClass('active')
+            setTimeout(() => $($('.hk-nav-item')[nextIndex-2]).addClass('active'), 100)
+          }
+        });
+        }
+        // $('#fullpage').fullpage({menu: '.hk-navigation',});
 });
+
+function onNavClick(e, i) {
+  $.fn.fullpage.moveTo(i+1);
+}

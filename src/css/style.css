@@ -178,6 +178,7 @@ body {
   text-decoration: none;
   display: inline-block;
   position: relative;
+  cursor: pointer;
   color: transparent;
   font-size: 14px;
   font-weight: 300;
@@ -209,6 +210,7 @@ body {
   border: 1px solid #31a4b2;
   border-radius: 50%;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .hk-nav-item.active .hk-menu-circle, .hk-nav-item:hover .hk-menu-circle {

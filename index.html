@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <html>
 
 <head>
@@ -11,10 +12,13 @@
   <link href="src/css/fonts.css" rel="stylesheet">
   <link href="src/css/material-design-iconic-font.css" rel="stylesheet">
   <link href="src/css/swiper.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" />
 </head>
 
 <body>
-  <div class="hk-screen hk-main">
+  <div id="fullpage">
+
+  <div class="hk-screen hk-main section">
     <div class="video-container">
       <video id="video-loader" preload autoplay>
           <source src="./src/video/onload.mov" />
@@ -73,17 +77,17 @@
       <a class="hk-logo" href=""><img src="src/img/hacken-logo.png" alt="Hacken" /></a>
 
       <ul class="hk-nav-menu">
-        <li><a href="" class="hk-nav-item"><span class="hk-nav-item_name">About</span><span class="hk-menu-circle"></span></a></li>
-        <li><a href="" class="hk-nav-item"><span class="hk-nav-item_name">Timeline</span><span class="hk-menu-circle"></span></a></li>
-        <li><a href="" class="hk-nav-item"><span class="hk-nav-item_name">Hacken</span><span class="hk-menu-circle"></span></a></li>
-        <li><a href="" class="hk-nav-item"><span class="hk-nav-item_name">Milestones</span><span class="hk-menu-circle"></span></a></li>
-        <li><a href="" class="hk-nav-item"><span class="hk-nav-item_name">Token sale</span><span class="hk-menu-circle"></span></a></li>
-        <li><a href="" class="hk-nav-item"><span class="hk-nav-item_name">Burning model</span><span class="hk-menu-circle"></span></a></li>
-        <li><a href="" class="hk-nav-item"><span class="hk-nav-item_name">Token sale details</span><span class="hk-menu-circle"></span></a></li>
-        <li><a href="" class="hk-nav-item"><span class="hk-nav-item_name">Bonuses</span><span class="hk-menu-circle"></span></a></li>
-        <li><a href="" class="hk-nav-item"><span class="hk-nav-item_name">Bounty</span><span class="hk-menu-circle"></span></a></li>
-        <li><a href="" class="hk-nav-item"><span class="hk-nav-item_name">Executive team</span><span class="hk-menu-circle"></span></a></li>
-        <li><a href="" class="hk-nav-item"><span class="hk-nav-item_name">Partners</span><span class="hk-menu-circle"></span></a></li>
+        <li><div onclick="onNavClick(this, 1)" class="hk-nav-item"><span class="hk-nav-item_name">About</span><span class="hk-menu-circle"></span></div></li>
+        <li><div onclick="onNavClick(this, 2)" class="hk-nav-item"><span class="hk-nav-item_name">Timeline</span><span class="hk-menu-circle"></span></div></li>
+        <li><div onclick="onNavClick(this, 3)" class="hk-nav-item"><span class="hk-nav-item_name">Hacken</span><span class="hk-menu-circle"></span></div></li>
+        <li><div onclick="onNavClick(this, 4)" class="hk-nav-item"><span class="hk-nav-item_name">Milestones</span><span class="hk-menu-circle"></span></div></li>
+        <li><div onclick="onNavClick(this, 5)" class="hk-nav-item"><span class="hk-nav-item_name">Token sale</span><span class="hk-menu-circle"></span></div></li>
+        <li><div onclick="onNavClick(this, 6)" class="hk-nav-item"><span class="hk-nav-item_name">Burning model</span><span class="hk-menu-circle"></span></div></li>
+        <li><div onclick="onNavClick(this, 7)" class="hk-nav-item"><span class="hk-nav-item_name">Token sale details</span><span class="hk-menu-circle"></span></div></li>
+        <li><div onclick="onNavClick(this, 8)" class="hk-nav-item"><span class="hk-nav-item_name">Bonuses</span><span class="hk-menu-circle"></span></div></li>
+        <li><div onclick="onNavClick(this, 9)" class="hk-nav-item"><span class="hk-nav-item_name">Bounty</span><span class="hk-menu-circle"></span></div></li>
+        <li><div onclick="onNavClick(this, 10)" class="hk-nav-item"><span class="hk-nav-item_name">Executive team</span><span class="hk-menu-circle"></span></div></li>
+        <li><div onclick="onNavClick(this, 11)" class="hk-nav-item"><span class="hk-nav-item_name">Partners</span><span class="hk-menu-circle"></span></div></li>
       </ul>
     </nav>
 
@@ -148,7 +152,7 @@
 
     </div>
   </div>
-  <div class="hk-screen hk-about">
+  <div class="hk-screen hk-about section">
     <div class="hk-central_block">
       <div>
         <h2 class="">About project</h2>
@@ -165,7 +169,7 @@
       </div>
     </div>
   </div>
-  <div class="hk-screen hk-timeline">
+  <div class="hk-screen hk-timeline section">
     <div class="hk-central_block">
       <div class="not-relative">
         <h2>Timeline</h2>
@@ -198,7 +202,7 @@
       </div>
     </div>
   </div>
-  <div class="hk-screen hk-hacken">
+  <div class="hk-screen hk-hacken section">
     <div class="hk-central_block">
       <div class="not-relative">
         <h2>What is Hacken</h2>
@@ -212,7 +216,7 @@
       </div>
     </div>
   </div>
-  <div class="hk-screen hk-milestones">
+  <div class="hk-screen hk-milestones section">
     <div class="hk-central_block">
       <div class="not-relative">
         <h2>Milestones</h2>
@@ -289,7 +293,7 @@
       </div>
     </div>
   </div>
-  <div class="hk-screen hk-token_sale">
+  <div class="hk-screen hk-token_sale section">
     <div class="hk-central_block">
       <div>
         <h2 class="">Token sale structure</h2>
@@ -300,7 +304,7 @@
       </div>
     </div>
   </div>
-  <div class="hk-screen hk-burning">
+  <div class="hk-screen hk-burning section">
     <div class="hk-central_block">
       <div>
         <h2 class="">Burning Haken model</h2>
@@ -320,7 +324,7 @@
       </div>
     </div>
   </div>
-  <div class="hk-screen hk-details">
+  <div class="hk-screen hk-details section">
     <div class="hk-central_block">
       <div>
         <h2 class="">Token sale detailes</h2>
@@ -346,7 +350,7 @@
       </div>
     </div>
   </div>
-  <div class="hk-screen hk-bonuses">
+  <div class="hk-screen hk-bonuses section">
     <div class="hk-central_block">
       <div>
         <h2 class="">Bonuses</h2>
@@ -419,7 +423,7 @@
       </div>
     </div>
   </div>
-  <div class="hk-screen hk-bounty">
+  <div class="hk-screen hk-bounty section">
     <div class="hk-central_block">
       <div>
         <h2 class="">Bounty</h2>
@@ -454,7 +458,7 @@
       </div>
     </div>
   </div>
-  <div class="hk-screen hk-team hk-milestones">
+  <div class="hk-screen hk-team hk-milestones section">
     <div class="hk-central_block">
       <div class="not-relative">
         <div class="left-side">
@@ -571,7 +575,7 @@
     </div>
   </div>
 
-  <div class="hk-screen hk-partners hk-milestones">
+  <div class="hk-screen hk-partners hk-milestones section">
     <div class="hk-central_block">
         <div class="not-relative">
           <div class="block-title-with-pagination">
@@ -660,5 +664,6 @@
 <script src="./src/js/jquery.min.js"></script>
 <script src="./src/js/swiper.jquery.min.js"></script>
 <script src="./src/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>
 
-</html>
+</html>div
