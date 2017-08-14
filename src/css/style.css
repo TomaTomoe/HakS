@@ -1267,11 +1267,26 @@ h2+hr {
 }
 
 
-.team-slider .swiper-slide img {
-  display: block;
+.team-slider .swiper-slide .team-image, .team-image-active {
   max-width: 100%;
   height: auto;
   border-bottom: 1px solid #31a4b2;
+}
+
+.team-slider .swiper-slide .team-image {
+  display: block;
+}
+
+.team-slider .swiper-slide .team-image-active {
+  display: none;
+}
+
+.team-slider .swiper-slide:hover .team-image {
+  display: none;
+}
+
+.team-slider .swiper-slide:hover .team-image-active {
+  display: block;
 }
 
 .team-slider .name {
