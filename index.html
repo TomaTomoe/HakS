@@ -15,6 +15,11 @@
 
 <body>
   <div class="hk-screen hk-main">
+    <div class="video-container">
+      <video id="video-loader" preload autoplay>
+          <source src="./src/video/onload.mov" />
+      </video>
+    </div>
     <header class="hk-header">
       <a class="hk-subscribe" href="">
         <span class="hk-subscribe-icon"><i class="zmdi zmdi-email"></i></span>
@@ -55,7 +60,7 @@
       </ul>
 
       <!--<button class="hk-report-button">-->
-        <!--<span class="hk-report-icon"></span>-->
+      <!--<span class="hk-report-icon"></span>-->
       <!--</button>-->
 
       <div id="hk-language-select">
@@ -96,11 +101,51 @@
     <div class="hk-timer">
       <div class="hk-time">
         <span class="hk-time-header">Time to start</span>
+
+        <div class="hk-bonus_timer-time__main">
+
+          <div class="hk-bonus_timer-timetick__main">
+            <div id="timetick-day-main" class="timetick-time day">
+              01
+            </div>
+            <div class="timetick-desc">
+              days
+            </div>
+          </div>
+
+          <div class="hk-bonus_timer-timetick__main">
+            <div id="timetick-hour-main" class="timetick-time">
+              14
+            </div>
+            <div class="timetick-desc">
+              hours
+            </div>
+          </div>
+
+          <div class="hk-bonus_timer-timetick__main">
+            <div id="timetick-minute-main" class="timetick-time">
+              03
+            </div>
+            <div class="timetick-desc">
+              minutes
+            </div>
+          </div>
+
+          <div class="hk-bonus_timer-timetick__main">
+            <div id="timetick-second-main" class="timetick-time">
+              49
+            </div>
+            <div class="timetick-desc">
+              seconds
+            </div>
+          </div>
+      </div>
       </div>
       <div class="hk-amount">
         <span class="hk-amount-header">Amount of money raised</span>
         <span class="hk-amount-number">36</span>
       </div>
+
     </div>
   </div>
   <div class="hk-screen hk-about">
@@ -110,8 +155,8 @@
         <hr />
         <p class="hk-about-quote_text">Hacken is the first cybersecurity expertise decentralized cryptocurrency, build on Ethereum.</p>
         <p class="hk-about-descr">
-          Hacken is the first cyber security expertise decentralized cryptocurrency, build on Ethereum. It creates the ecosystem for providing high quality cyber security services for the companies all around the world. The Token sale is powered by the CyberGuard Company.
-          CyberGuard accumulates and distributes the investments, controls the processes and develops the HackenProof platform a marketplace for the cyber security services.
+          Hacken is the first cyber security expertise decentralized cryptocurrency, build on Ethereum. It creates the ecosystem for providing high quality cyber security services for the companies all around the world. The Token sale is powered by the CyberGuard
+          Company. CyberGuard accumulates and distributes the investments, controls the processes and develops the HackenProof platform a marketplace for the cyber security services.
         </p>
         <p class="hk-about-descr">
           The platform will allow users to purchase penetration test services for their products or systems. HackenProof will provide clients with the o fficial digital mark and certificate in case of successful completion of cybersecurity test.
@@ -247,31 +292,167 @@
   <div class="hk-screen hk-token_sale">
     <div class="hk-central_block">
       <div>
-        <h2 class="">About project</h2>
-        <hr />
-        <p class="hk-about-quote_text">Hacken is the first cybersecurity expertise decentralized cryptocurrency, build on Ethereum.</p>
-        <p class="hk-about-descr">
-          Hacken is the first cyber security expertise decentralized cryptocurrency, build on Ethereum. It creates the ecosystem for providing high quality cyber security services for the companies all around the world. The Token sale is powered by the CyberGuard Company.
-          CyberGuard accumulates and distributes the investments, controls the processes and develops the HackenProof platform a marketplace for the cyber security services.
-        </p>
-        <p class="hk-about-descr">
-          The platform will allow users to purchase penetration test services for their products or systems. HackenProof will provide clients with the o fficial digital mark and certificate in case of successful completion of cybersecurity test.
-          <br /><br /> The tests will be run by the best teams of us white hackers.
-        </p>
+        <h2 class="">Token sale structure</h2>
+        <div class="hk-token_sale-figure">
+          <div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="hk-screen hk-burning">
-
+    <div class="hk-central_block">
+      <div>
+        <h2 class="">Burning Haken model</h2>
+        <hr />
+        <p class="hk-burning-quote_text">Hacken uses revolutionary burning model for the investors equity growth, instead of traditional profit share or buy-back schemes.</p>
+        <p class="hk-burning-descr">
+          Hacken uses revolutionary burning model for the investors equity growth, instead of traditional profit share or buy-back schemes.
+          <br /><br />All sales at HackenProof Marketplace and Hacken Accelerator are made in Hackens only. All profits from the operations earned are split in half. Half of the Hackens is deactivated and removed from the system and the other half is
+          send back for sale at the open market.
+          <br /><br />This model leads for long run investment attractiveness by disbalancing Hackens supply and demand.
+        </p>
+        <p class="hk-burning-descr">
+          Hacken Ecosystem development would lead to Hacken demand increase from the Clients and VC at the same time there would be less Hackens available due to its constant deactivation. Less investors will want to sell their Hackens which will permanently increase
+          Hackens market price.
+          <br /><br />Per mathematical calculations such model will lead to higher equity growth comparing with traditional profit share due to allocation of the profits from burned Hackens to long run investors.
+        </p>
+      </div>
+    </div>
   </div>
   <div class="hk-screen hk-details">
-
+    <div class="hk-central_block">
+      <div>
+        <h2 class="">Token sale detailes</h2>
+        <hr />
+        <p class="hk-details-quote_text">Total supply: 20 mln Hackens. 1.3 mln at presale (1 mln + 30% bonus) and 18.7 mln at Token sale.<br />No future emissions</p>
+        <div class="hk-details-panes_container">
+          <div class="hk-details-pane">
+            <h5>Symbol</h5> HKN
+          </div>
+          <div class="hk-details-pane">
+            <h5>Initial price</h5> 1 Hacken = 1 USD
+          </div>
+          <div class="hk-details-pane">
+            <h5>Crypto currencies<br />accepted</h5> BTC, ETH, DASH,<br />LTC, ETC, USDT,<br />EUR, USD
+          </div>
+          <div class="hk-details-pane">
+            <h5>Length of<br />Token sale</h5> 1 month from<br />October 7th 2017
+          </div>
+          <div class="hk-details-pane">
+            <h5>Escrow</h5> 80% of the funds<br />raised are kept at<br />escrow account
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="hk-screen hk-bonuses">
+    <div class="hk-central_block">
+      <div>
+        <h2 class="">Bonuses</h2>
+        <p>
+          Only just now you can get an extra bonuses
+        </p>
+        <div class="hk-bonuses-figure">
+          <div class="hk-bonus_timer">
+            <p>Time to complete current bonuse:</p>
+            <hr />
+            <div class="hk-bonus_timer-time">
 
+              <div class="hk-bonus_timer-timetick">
+                <div id="timetick-day" class="timetick-time day">
+                  01
+                </div>
+                <div class="timetick-desc">
+                  days
+                </div>
+              </div>
+
+              <div class="hk-bonus_timer-timetick">
+                <div id="timetick-hour" class="timetick-time">
+                  14
+                </div>
+                <div class="timetick-desc">
+                  hours
+                </div>
+              </div>
+
+              <div class="hk-bonus_timer-timetick">
+                <div id="timetick-minute" class="timetick-time">
+                  03
+                </div>
+                <div class="timetick-desc">
+                  minutes
+                </div>
+              </div>
+
+              <div class="hk-bonus_timer-timetick">
+                <div id="timetick-second" class="timetick-time">
+                  49
+                </div>
+                <div class="timetick-desc">
+                  seconds
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="hk-bonuse-circle_container">
+            <div class="hk-bonus_circle bonus_active">
+              <span class="hk-bonus_percent">+25%</span>
+              <span class="hk-bonus_time">1-4 hours</span>
+            </div>
+            <div class="hk-bonus_circle">
+              <span class="hk-bonus_percent">+20%</span>
+              <span class="hk-bonus_time">1-2 days</span>
+            </div>
+            <div class="hk-bonus_circle">
+              <span class="hk-bonus_percent">+15%</span>
+              <span class="hk-bonus_time">3-7 days</span>
+            </div>
+            <div class="hk-bonus_circle">
+              <span class="hk-bonus_percent">+10%</span>
+              <span class="hk-bonus_time">1-2 week</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="hk-screen hk-bounty">
-
+    <div class="hk-central_block">
+      <div>
+        <h2 class="">Bounty</h2>
+        <hr />
+        <p class="hk-bounty-quote_text">Distribution of total tokens number allocated to<br />Bounty campaigns:</p>
+        <div class="hk-bounty-panes_container">
+          <div class="hk-bounty-pane">
+            <div class="hk-bounty_diagramm hk-diagramm_10">10%</div>
+            <h6>Facebook<br />Campaign</h6>
+          </div>
+          <div class="hk-bounty-pane">
+            <div class="hk-bounty_diagramm hk-diagramm_10">10%</div>
+            <h6>Twitter<br />Campaign</h6>
+          </div>
+          <div class="hk-bounty-pane">
+            <div class="hk-bounty_diagramm hk-diagramm_10">10%</div>
+            <h6>BitcoinTalk Thread<br />Campaign</h6>
+          </div>
+          <div class="hk-bounty-pane">
+            <div class="hk-bounty_diagramm hk-diagramm_15">15%</div>
+            <h6>BitcoinTalk Signature<br />Campaign</h6>
+          </div>
+          <div class="hk-bounty-pane">
+            <div class="hk-bounty_diagramm hk-diagramm_15">15%</div>
+            <h6>BitcoinTalk Translation<br />Campaign</h6>
+          </div>
+          <div class="hk-bounty-pane">
+            <div class="hk-bounty_diagramm hk-diagramm_40">40%</div>
+            <h6>Blogging<br />Campaign</h6>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="hk-screen hk-team hk-milestones">
     <div class="hk-central_block">
@@ -479,4 +660,5 @@
 <script src="./src/js/jquery.min.js"></script>
 <script src="./src/js/swiper.jquery.min.js"></script>
 <script src="./src/js/script.js"></script>
+
 </html>

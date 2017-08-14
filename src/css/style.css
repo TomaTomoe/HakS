@@ -58,14 +58,14 @@ body {
   margin-top: 50px;
 }
 
-.hk-social-link a{
+.hk-social-link a {
   padding: 0px 20px;
   color: #fff;
   transition: .15s ease-in-out;
   font-size: 20px;
 }
 
-.hk-social-link a:hover{
+.hk-social-link a:hover {
   color: #31a4b2;
 }
 
@@ -89,8 +89,7 @@ body {
   transition: .15s ease-in-out;
 }
 
-#hk-language-select a:hover,
-#hk-language-select a.active {
+#hk-language-select a:hover, #hk-language-select a.active {
   color: #31a4b2;
   text-decoration: underline;
 }
@@ -351,7 +350,6 @@ hr {
   z-index: -1;
 }
 
-
 p.hk-about-descr {
   font-size: 16px;
   font-weight: 100;
@@ -359,6 +357,19 @@ p.hk-about-descr {
   max-width: 400px;
 }
 
+
+.video-container {
+  position: absolute;
+  top: 0;
+  z-index: 8;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+#video-loader {
+  width: 100%;
+}
 
 /*SLIDE 3*/
 
@@ -519,43 +530,43 @@ p.hk-about-descr {
   position: relative;
 }
 
-.hk-hacken-figure > div {
+.hk-hacken-figure>div {
   position: absolute;
 }
 
 #hacken-1 {
-    top: 110px;
-    left: 121px;
-    font-size: 22px;
-    font-weight: 300;
+  top: 110px;
+  left: 121px;
+  font-size: 22px;
+  font-weight: 300;
 }
 
 #hacken-2 {
-    top: 167px;
-    right: 150px;
-    font-size: 22px;
-    font-weight: 300;
+  top: 167px;
+  right: 150px;
+  font-size: 22px;
+  font-weight: 300;
 }
 
 #hacken-3 {
-    top: 275px;
-    left: 205px;
-    font-size: 22px;
-    font-weight: 500;
+  top: 275px;
+  left: 205px;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 #hacken-4 {
-    bottom: 80px;
-    right: 80px;
-    font-size: 16px;
-    font-weight: 300;
+  bottom: 80px;
+  right: 80px;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 #hacken-5 {
-    bottom: 55px;
-    left: 80px;
-    font-size: 16px;
-    font-weight: 300;
+  bottom: 55px;
+  left: 80px;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .hk-milestones {
@@ -567,95 +578,94 @@ p.hk-about-descr {
 }
 
 .hk-milestones .hk-central_block {
-    align-items: baseline;
+  align-items: baseline;
 }
 
 .hk-milestones .hk-central_block>div {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .hk-milestones h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 46px;
-    font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: 100;
 }
 
 .hk-milestones-block_headers {
-    width: 100%;
-    height: 200px;
+  width: 100%;
+  height: 200px;
 }
 
-.hk-milestones-block_headers > div {
-    display: inline-block;
-    width: 20%;
-
-    box-sizing: border-box;
-    padding-left: 30px;
+.hk-milestones-block_headers>div {
+  display: inline-block;
+  width: 20%;
+  box-sizing: border-box;
+  padding-left: 30px;
 }
 
-.hk-milestones-block_headers > div + div {
-    margin-left: -4px;
+.hk-milestones-block_headers>div+div {
+  margin-left: -4px;
 }
 
-.hk-milestones-block_headers > div h4 {
+.hk-milestones-block_headers>div h4 {
   text-transform: capitalize;
   font-size: 22px;
-font-weight: 500;
-color: #55c3c8;
+  font-weight: 500;
+  color: #55c3c8;
 }
 
 .hk-milestones-block_headers p {
   font-size: 16px;
   font-weight: 300;
-      margin-top: 30px;
+  margin-top: 30px;
 }
 
 .hk-milestones-block_cards {
   width: 100%;
-  height: 360px;
+  height: 400px;
 }
 
-.hk-milestones-block_cards > div {
+.hk-milestones-block_cards>div {
   display: inline-block;
   vertical-align: top;
   width: 20%;
-      box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.hk-milestones-block_cards > div + div {
-    margin-left: -4px;
+.hk-milestones-block_cards>div+div {
+  margin-left: -4px;
 }
 
 .hk-milestones-block {
-    height: 100%;
+  height: 100%;
 }
 
 .hk-milestones-block.hk-block-1 {
-    background: #2f3f40;
+  background: #2f3f40;
 }
 
 .hk-milestones-block.hk-block-2 {
-    background: #365a5b;
+  background: #365a5b;
 }
 
 .hk-milestones-block.hk-block-3 {
-    background: #4d7876;
+  background: #4d7876;
 }
 
 .hk-milestones-block.hk-block-4 {
-    background: #539897;
+  background: #539897;
 }
 
 .hk-milestones-block.hk-block-5 {
-    background: #55c3c8;
+  background: #55c3c8;
 }
 
 .hk-milestones-block p {
-    padding: 0 30px;
-    font-size: 16px;
-    font-weight: 100;
-    line-height: 24px;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 24px;
 }
 
 .hk-white {
@@ -677,6 +687,7 @@ color: #55c3c8;
 .hk-token_sale {
   background-color: #2f2f2f;
 }
+
 .hk-token_sale .hk-central_block {
   align-items: baseline;
 }
@@ -699,11 +710,12 @@ color: #55c3c8;
   background: url("../img/hk-token_sale.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-size: contain;
   margin-top: 100px;
   position: relative;
 }
 
-.hk-token_sale-figure > div {
+.hk-token_sale-figure>div {
   position: absolute;
 }
 
@@ -711,16 +723,330 @@ color: #55c3c8;
   background-color: #282828;
 }
 
+.hk-burning .hk-central_block {
+  align-items: baseline;
+}
+
+.hk-burning .hk-central_block>div {
+  margin-top: 50px;
+}
+
+.hk-burning h2 {
+  font-size: 46px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.hk-burning p {
+  width: 33%;
+  float: left;
+  padding-left: 90px;
+  box-sizing: border-box;
+}
+
+.hk-burning-quote_text {
+  position: relative;
+  z-index: 1;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 100;
+  color: #31a4b2;
+  margin-top: 60px;
+}
+
+.hk-burning-quote_text:before {
+  content: '“';
+  position: absolute;
+  top: 90px;
+  left: -15px;
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 500;
+  font-size: 400px;
+  color: #383838;
+  z-index: -1;
+}
+
+p.hk-burning-descr {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 30px;
+  max-width: 400px;
+}
+
 .hk-details {
   background-color: #313131;
+}
+
+.hk-details .hk-central_block {
+  align-items: baseline;
+}
+
+.hk-details .hk-central_block>div {
+  margin-top: 50px;
+}
+
+.hk-details h2 {
+  font-size: 46px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.hk-details-quote_text {
+  position: relative;
+  z-index: 1;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 100;
+  color: #31a4b2;
+  margin-top: 60px;
+}
+
+.hk-details p {
+  width: 29%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.hk-details-panes_container {
+  float: left;
+  width: 71%;
+  padding-left: 80px;
+  box-sizing: border-box;
+}
+
+.hk-details-pane {
+  width: 33%;
+  min-width: 150px;
+  float: left;
+  box-sizing: border-box;
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 28px;
+}
+
+.hk-details-pane h5 {
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .hk-bonuses {
   background-color: #282828;
 }
 
+.hk-bonuses .hk-central_block {
+  align-items: baseline;
+}
+
+.hk-bonuses .hk-central_block>div {
+  margin-top: 50px;
+}
+
+.hk-bonuses h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: 100;
+}
+
+.hk-bonuses p {
+  text-align: center;
+  color: #31a4b2;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.hk-bonuses-figure {
+  height: 500px;
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+}
+
+.hk-bonus_timer {
+  height: 340px;
+  width: 620px;
+  border: 10px solid #31a4b2;
+  display: block;
+  float: left;
+  position: relative;
+}
+
+.hk-bonus_timer-time {
+  height: calc(100% - 145px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
+margin: auto;
+}
+
+.hk-bonus_timer-time__main {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hk-bonus_timer-time__main .timetick-time {
+  color: white;
+  margin-top: 0;
+}
+
+.timetick-time {
+  padding-bottom: 0;
+  color: #31a4b2;
+  font-size: 40px;
+  font-weight: 900;
+  display: block;
+  margin-top: 40px;
+}
+
+.timetick-desc {
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 16px;
+}
+
+
+.hk-bonuse-circle_container {
+  display: block;
+  float: left;
+  width: calc(100% - 640px);
+}
+
+.hk-bonus_circle {
+  height: 150px;
+  width: 150px;
+  margin-left: calc(50% - 152px);
+  margin-bottom: 65px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #2f2f2f;
+  text-align: center;
+}
+
+.hk-bonus_circle.bonus_active {
+  background: #2b3131;
+}
+
+.hk-bonus_percent {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 900;
+  display: block;
+  margin-top: 40px;
+}
+
+.hk-bonus_circle.bonus_active .hk-bonus_percent {
+  color: #31a4b2;
+}
+
+.hk-bonus_time {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.hk-bonus_timer p {
+  color: #ffffff;
+}
+
+.hk-bonus_timer hr {
+  margin: auto;
+}
+
 .hk-bounty {
   background-color: #303030;
+}
+
+.hk-bounty .hk-central_block {
+  align-items: baseline;
+}
+
+.hk-bounty .hk-central_block>div {
+  margin-top: 50px;
+}
+
+.hk-bounty h2 {
+  font-size: 46px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.hk-bounty-quote_text {
+  position: relative;
+  z-index: 1;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 100;
+  color: #31a4b2;
+  margin-top: 60px;
+}
+
+.hk-bounty p {
+  width: 29%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.hk-bounty-panes_container {
+  float: left;
+  width: 71%;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.hk-bounty-pane {
+  width: 33%;
+  min-width: 150px;
+  float: left;
+  box-sizing: border-box;
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 28px;
+}
+
+.hk-bounty-pane h6 {
+  font-size: 22px;
+  font-weight: 100;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hk-bounty_diagramm {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 60px;
+}
+
+.hk-diagramm_10 {
+  background: url("../img/bounty-10.png");
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.hk-diagramm_15 {
+  background: url("../img/bounty-15.png");
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.hk-diagramm_40 {
+  background: url("../img/bounty-40.png");
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .hk-team {
@@ -742,7 +1068,6 @@ color: #55c3c8;
   left: 0;
 }
 
-
 .margin-none {
   margin: 0 !important;
 }
@@ -755,27 +1080,14 @@ color: #55c3c8;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-
-h2 {
-  margin: 125px 0;
-}
-
-.hk-about,
-.hk-token_sale,
-.hk-partners,
-.hk-bounty,
-.hk-details {
+.hk-about, .hk-token_sale, .hk-partners, .hk-bounty, .hk-details {
   position: relative;
 }
 
-.hk-about:after,
-.hk-token_sale:after,
-.hk-partners:after,
-.hk-bounty:after,
-.hk-details:after {
+.hk-about:after, .hk-token_sale:after, .hk-partners:after, .hk-bounty:after, .hk-details:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -795,12 +1107,8 @@ h2 {
   background-color: #313131;
 }
 
-.hk-main,
-.hk-timeline,
-.hk-burning,
-.hk-team,
-.hk-bonuses {
-  background-attachment: fixed;
+.hk-main, .hk-timeline, .hk-burning, .hk-team, .hk-bonuses {
+  background-attachment: local;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -826,9 +1134,8 @@ h2 {
   background-image: url(./../img/bonuses-bg.png);
 }
 
-h2 + hr {
-  position: relative;
-  transform: translateY(-80px);
+h2+hr {
+  margin: 50px 0;
 }
 
 .main-page-links {
