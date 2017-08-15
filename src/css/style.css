@@ -522,19 +522,19 @@ p.hk-about-descr {
 .hk-timeline-line-2 .hk-cell-2 {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 75px;
+  margin-left: 55px;
 }
 
 .hk-timeline-line-2 .hk-cell-3 {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 90px;
+  margin-left: 25px;
 }
 
 .hk-timeline-line-2 .hk-cell-4 {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 92px;
+  margin-left: 40px;
 }
 
 .hk-timeline-line-3 {
@@ -575,19 +575,19 @@ p.hk-about-descr {
 .hk-timeline-line-4 .hk-cell-2 {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 75px;
+  margin-left: 55px;
 }
 
 .hk-timeline-line-4 .hk-cell-3 {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 80px;
+  margin-left: 60px;
 }
 
 .hk-timeline-line-4 .hk-cell-4 {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
 .hk-hacken {
@@ -1235,6 +1235,10 @@ h2+hr {
   margin: 50px 0;
 }
 
+.token-sale-hr {
+  margin-bottom: 0px;
+}
+
 .main-page-links {
   display: flex;
   justify-content: flex-start;
@@ -1265,6 +1269,13 @@ h2+hr {
   font-size: 22px;
   font-weight: 100;
 }
+
+
+.partners-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
 
 .partners-slider .swiper-wrapper {
   margin-top: 8vh;
@@ -1335,6 +1346,7 @@ h2+hr {
 
 .block-title-with-pagination.advisors , .block-title-with-pagination.partners {
   flex-direction: row;
+  padding-right: 3em;
 }
 
 .block-title-with-pagination.partners {
@@ -1375,6 +1387,7 @@ h2+hr {
 
 .team-slider {
   margin-top: 20px;
+  padding-left: 20px;
 }
 
 .team-slider .swiper-container {
@@ -1546,6 +1559,7 @@ h2+hr {
 }
 .hk-details-pane,
 .hk-details-pane h5 {
+    margin-top: 0;
     font-size: 18px;
 }
 .hk-bonus_timer {
@@ -1562,8 +1576,8 @@ h2 {
     font-size: 40px !important;
 }
 .team-slider .swiper-slide .team-image, .team-image-active {
-    max-width: 250px;
-    max-height: 376px;
+    width: 250px;
+    height: 376px;
 }
 .hk-team .hk-central_block>div.not-relative {
     margin-top: 5em;
