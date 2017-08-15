@@ -113,6 +113,32 @@
     </div>
   </div>
   <!--  -->
+
+
+  <!-- Become advisor modal container -->
+  <div class="advisor-modal-container">
+    <div class="advisor-modal-content">
+      <div class="modal-header">
+        <div class="modal-x-mark">
+          <!-- <i class="zmdi zmdi-close"></i> -->
+          <img onclick="toggleAdvisorModal(false)" src="./src/img/close-modal-icon.png" alt="">
+        </div>
+      </div>
+      <div class="modal-form">
+        <h3 class="modal-form-desc">Become Advisor</h3>
+        <h3 class="modal-form-desc-white">To send your ideas on Hacken marketplace development</h3>
+        <input class="modal-form-input" type="text" name="" placeholder="Your name" value="">
+        <input class="modal-form-input" type="text" name="" placeholder="Your phone" value="">
+        <input class="modal-form-input" type="text" name="" placeholder="Your e-mail" value="">
+      </div>
+      <div class="modal-footer-advisor">
+        <button class="modal-submit-button" type="button" name="" value="submit">Send</button>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+
   <div id="fullpage">
 
   <div class="hk-screen hk-main section">
@@ -621,20 +647,6 @@
               </div>
 
               <div class="swiper-slide"
-              onclick="window.open('https://www.linkedin.com/in/vladimir-taratushka-%E2%9C%94-84040960/', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');">
-                <img class="team-image" src="./src/img/team-6.jpg" alt="">
-                <img class="team-image-active" src="./src/img/team-6-active.jpg" alt="">
-                <div class="name">
-                  Vladimir Taratushka
-                </div>
-                <div class="work">
-                  HackIT conference director
-                </div>
-                <div class="member-description">
-                </div>
-              </div>
-
-              <div class="swiper-slide"
               onclick="window.open('http://linkedin.com/in/andriimatiukhin', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');">
                 <img class="team-image" src="./src/img/team-1.jpg" alt="">
                 <img class="team-image-active" src="./src/img/team-1-active.jpg" alt="">
@@ -648,6 +660,20 @@
                   Andrii high qualified cyber security expert with 13 years of successful career path in industry. Worked for corporate customers and system integrators.
                   Successfully drive complex technical solutions for a dozen projects in several countries for commercial companies and Government Agency, National Banks, Olympic Games. He is a certified expert in several areas, has more than 10 certificates of competence.
                   His role in project is to provide technology leadership for developing, integrating, and supporting of Platform.
+                </div>
+              </div>
+
+              <div class="swiper-slide"
+              onclick="window.open('https://www.linkedin.com/in/vladimir-taratushka-%E2%9C%94-84040960/', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');">
+                <img class="team-image" src="./src/img/team-6.jpg" alt="">
+                <img class="team-image-active" src="./src/img/team-6-active.jpg" alt="">
+                <div class="name">
+                  Vladimir Taratushka
+                </div>
+                <div class="work">
+                  HackIT conference director
+                </div>
+                <div class="member-description">
                 </div>
               </div>
 
@@ -696,7 +722,7 @@
                   Lyubomyr holds Bachelor's Degree in Finance and finished PreDevelopment Program
                   Msc in Innovations and Entrepreneurship in LvBS (Lviv Business School).
                   More than 10 years of management experience in insurance and fintech, last 6 in Vienna Insurance Group subsidiary (USG).
-                  He is serial entrepreneur, trader, investment adviser and a founder and CEO of IT company "Elearnio"
+                  He is serial entrepreneur, trader, investment advisor and a founder and CEO of IT company "Elearnio"
                 </div>
               </div>
           </div>
@@ -741,7 +767,7 @@
                   <div class="swiper-slide">
                     <img class="advisor-image" src="./src/img/advisor-3.png" alt="">
                     <div class="name">
-                      Den Beregovoy
+                      Den Beregovyi
                     </div>
                     <div class="member-description">
                       Token sale legal advisor partner & co-founder at Axon Partners
@@ -807,7 +833,7 @@
                 </div>
               </div>
             </div>
-            <div class="hk-header">
+            <div class="hk-header-last">
               <div class="hk-subscribe" href="">
                 <span class="hk-subscribe-icon"><i class="zmdi zmdi-email"></i></span>
                 <span onclick="toggleMainModal(true)" class="hk-subscribe-link">Subscribe to our newsletter</span>
@@ -845,6 +871,10 @@
                   </a>
                 </li>
               </ul> -->
+              <div class="hk-become" href="">
+                <span class="hk-subscribe-icon"><i class="zmdi zmdi-account-box"></i></span>
+                <span onclick="toggleAdvisorModal(true)" class="hk-subscribe-link">Become Advisor</span>
+              </div>
             </div>
           </div>
         </div>

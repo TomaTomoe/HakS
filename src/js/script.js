@@ -140,3 +140,13 @@ function toggleHackenModal(toOpen, slideIndex = 0) {
     modal.style.visibility = 'hidden'
   }
 }
+
+function toggleAdvisorModal(toOpen) {
+  var modal = $('.advisor-modal-container')[0]
+  console.log('123123');
+  if (toOpen) {
+    modal.style.display = 'flex'
+  } else {
+    modal.style.display = 'none'
+  }
+}
