@@ -1,23 +1,31 @@
 $(document).ready(function () {
     var swiper = new Swiper('#swiper-container-partners', {
-        pagination: '.swiper-pagination',
+        pagination: '.swiper-pagination.partners',
         slidesPerView: 4,
         paginationClickable: true,
         spaceBetween: 30,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next.partners',
+        prevButton: '.swiper-button-prev.partners',
         paginationType: 'fraction'
     });
 
     var swiper2 = new Swiper('#swiper-container-team', {
-        pagination: '.swiper-pagination',
+        pagination: '.swiper-pagination.team',
         slidesPerView: 3,
         paginationClickable: true,
         spaceBetween: 50,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next.team',
+        prevButton: '.swiper-button-prev.team',
+        paginationType: 'fraction'
+    });
+
+    var swiper3 = new Swiper('#swiper-container-advisors', {
+        pagination: '.swiper-pagination.advisors',
+        slidesPerView: 4,
+        paginationClickable: true,
+        spaceBetween: 30,
+        nextButton: '.swiper-button-next.advisors',
+        prevButton: '.swiper-button-prev.advisors',
         paginationType: 'fraction'
     });
 
@@ -60,8 +68,24 @@ $(document).ready(function () {
 
 
       //comment this all to have chance to make changes
-      document.getElementById('video-loader').addEventListener('ended', handleVideoEnd, false);
-      function handleVideoEnd(e) {
+      // document.getElementById('video-loader').addEventListener('ended', handleVideoEnd, false);
+      // function handleVideoEnd(e) {
+      //   $('.video-container')[0].style.display = 'none'
+      //
+      //   $('#fullpage').fullpage({
+      //     menu: '.hk-navigation',
+      //     onLeave: function(index, nextIndex, direction){
+      //       console.log('nextIndex', nextIndex)
+      //       $('.hk-nav-item').removeClass('active')
+      //       if (nextIndex === 12) {
+      //         setTimeout(() => $($('.hk-nav-item')[nextIndex-1]).addClass('active'), 100)
+      //       } else {
+      //         setTimeout(() => $($('.hk-nav-item')[nextIndex-2]).addClass('active'), 100)
+      //       }
+      //     }
+      //   });
+      //   }
+
         $('.video-container')[0].style.display = 'none'
 
         $('#fullpage').fullpage({
@@ -76,8 +100,6 @@ $(document).ready(function () {
             }
           }
         });
-        }
-        // $('#fullpage').fullpage({menu: '.hk-navigation',});
 });
 
 function onNavClick(e, i) {

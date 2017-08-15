@@ -580,7 +580,8 @@ p.hk-about-descr {
 }
 
 .hk-milestones .hk-central_block>div {
-  margin-top: 50px;
+  margin-top: 75px;
+  margin-left: 50px;
 }
 
 .hk-milestones h2 {
@@ -1174,10 +1175,21 @@ h2+hr {
 }
 
 .partners-slider .swiper-wrapper {
-  margin-top: 15vh;
+  margin-top: 8vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.advisors-slider .swiper-wrapper {
+  margin-top: 8vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.advisor-image {
+  width: 100px;
+  border-radius: 50%;
 }
 
 .slider-pagination {
@@ -1226,6 +1238,14 @@ h2+hr {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+}
+
+.block-title-with-pagination.advisors , .block-title-with-pagination.partners {
+  flex-direction: row;
+}
+
+.block-title-with-pagination.partners {
+  padding-top: 3em;
 }
 
 .block-title-with-pagination .slider-pagination {
@@ -1300,13 +1320,37 @@ h2+hr {
   text-transform: uppercase;
 }
 
+.partners-slider .name {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #31a4b2;
+  text-transform: uppercase;
+}
+
+.advisors-slider .name {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #31a4b2;
+  text-transform: uppercase;
+}
+
 .team-slider .work {
   font-size: 16px;
   line-height: 1.3;
   margin-top: 4px;
 }
 
-.team-slider .member-description {
+.team-slider, .member-description {
+  font-size: 14px;
+      line-height: 1.5;
+      text-align: left;
+      font-weight: 100;
+          margin-top: 13px;
+}
+
+.partners-slider .member-description {
   font-size: 14px;
       line-height: 1.5;
       text-align: left;
@@ -1316,7 +1360,7 @@ h2+hr {
 
 .team-slider .member-description-last {
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.4;
   text-align: left;
   font-weight: 100;
   margin-top: 13px;
@@ -1424,7 +1468,7 @@ h2 {
     max-height: 376px;
 }
 .hk-team .hk-central_block>div.not-relative {
-    margin-top: 25px;
+    margin-top: 5em;
     display: flex;
 }
 .team-slider {
