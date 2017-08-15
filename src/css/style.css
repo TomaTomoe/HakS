@@ -389,6 +389,7 @@ p.hk-about-descr {
 
 .modal-x-mark {
   float: right;
+  cursor: pointer;
 }
 
 .modal-form {
