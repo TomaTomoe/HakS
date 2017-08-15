@@ -1441,7 +1441,7 @@ h2+hr {
 
 .team-slider .swiper-slide .team-image, .team-image-active {
   max-width: 280px;
-  height: auto;
+  height: 376px;
   border-bottom: 1px solid #31a4b2;
 }
 
