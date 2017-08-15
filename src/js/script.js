@@ -79,27 +79,8 @@ $(document).ready(function () {
 
 
       // comment this all to have chance to make changes
-      // document.getElementById('video-loader').addEventListener('ended', handleVideoEnd, false);
-      // function handleVideoEnd() {
-      //   $('.video-container')[0].style.display = 'none'
-      //
-      //   $('#fullpage').fullpage({
-      //     menu: '.hk-navigation',
-      //     onLeave: function(index, nextIndex, direction){
-      //       console.log('nextIndex', nextIndex)
-      //       $('.hk-nav-item').removeClass('active')
-      //       if (nextIndex === 12) {
-      //         setTimeout(() => $($('.hk-nav-item')[nextIndex-1]).addClass('active'), 100)
-      //       } else {
-      //         setTimeout(() => $($('.hk-nav-item')[nextIndex-2]).addClass('active'), 100)
-      //       }
-      //     }
-      //   });
-      //   }
-      //
-      //   //fallback function if video lagged
-      //   setTimeout(handleVideoEnd, 6000)
-
+      document.getElementById('video-loader').addEventListener('ended', handleVideoEnd, false);
+      function handleVideoEnd() {
         $('.video-container')[0].style.display = 'none'
 
         $('#fullpage').fullpage({
@@ -114,6 +95,25 @@ $(document).ready(function () {
             }
           }
         });
+        }
+
+        //fallback function if video lagged
+        setTimeout(handleVideoEnd, 6000)
+
+        // $('.video-container')[0].style.display = 'none'
+        //
+        // $('#fullpage').fullpage({
+        //   menu: '.hk-navigation',
+        //   onLeave: function(index, nextIndex, direction){
+        //     console.log('nextIndex', nextIndex)
+        //     $('.hk-nav-item').removeClass('active')
+        //     if (nextIndex === 12) {
+        //       setTimeout(() => $($('.hk-nav-item')[nextIndex-1]).addClass('active'), 100)
+        //     } else {
+        //       setTimeout(() => $($('.hk-nav-item')[nextIndex-2]).addClass('active'), 100)
+        //     }
+        //   }
+        // });
 });
 
 function onNavClick(e, i) {
@@ -138,5 +138,15 @@ function toggleHackenModal(toOpen, slideIndex = 0) {
     modal.style.visibility = 'visible'
   } else {
     modal.style.visibility = 'hidden'
+  }
+}
+
+function toggleAdvisorModal(toOpen) {
+  var modal = $('.advisor-modal-container')[0]
+  console.log('123123');
+  if (toOpen) {
+    modal.style.display = 'flex'
+  } else {
+    modal.style.display = 'none'
   }
 }

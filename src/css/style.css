@@ -23,18 +23,35 @@ body {
 
 .hk-header {
   display: block;
-  padding: 0 240px;
-  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.hk-subscribe {
+.hk-header-last {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hk-subscribe, .hk-become {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   color: #ffffff;
+  z-index: 1;
   text-decoration: none;
   margin-top: 50px;
   cursor: pointer;
+}
+
+.hk-become {
+  color: #31a4b2;
+}
+
+.hk-become:hover {
+  color: #ffffff;
 }
 
 .hk-subscribe:hover {
@@ -361,7 +378,7 @@ p.hk-about-descr {
   max-width: 400px;
 }
 
-.video-container, .main-modal-container, .hacken-modal-container {
+.video-container, .main-modal-container, .hacken-modal-container, .advisor-modal-container {
   position: absolute;
   top: 0;
   z-index: 8;
@@ -370,7 +387,7 @@ p.hk-about-descr {
   height: 100vh;
 }
 
-.main-modal-container, .hacken-modal-container {
+.main-modal-container, .hacken-modal-container, .advisor-modal-container {
   background: rgba(0, 0, 0, 0.95);
   border-bottom: 5px solid #31a4b2;
   top: -5px;
@@ -387,6 +404,14 @@ p.hk-about-descr {
 
 .main-modal-content {
   width: 40%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.advisor-modal-content {
+  width: 30%;
   height: 40%;
   display: flex;
   flex-direction: column;
@@ -427,6 +452,10 @@ p.hk-about-descr {
   flex: 10
 }
 
+.modal-footer-advisor {
+  padding-top: 20px;
+}
+
 .modal-form-input {
     width: 100%;
     outline: none;
@@ -446,6 +475,15 @@ p.hk-about-descr {
   font-weight: 100;
   color: #31a4b2;
 }
+
+.modal-form-desc-white {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 100;
+  margin-top: 13px;
+}
+
 
 .modal-submit-button {
   border: none;
