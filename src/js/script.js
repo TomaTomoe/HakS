@@ -29,6 +29,17 @@ $(document).ready(function () {
         paginationType: 'fraction'
     });
 
+    var swiperHackenModal = new Swiper('#swiper-container-hacken', {
+        pagination: '.swiper-pagination.hacken',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        nextButton: '.swiper-button-next.hacken',
+        prevButton: '.swiper-button-prev.hacken',
+        paginationType: 'fraction'
+    });
+
+    window.hackenSlider = swiperHackenModal;
    var countDownDate = new Date("Sep 5, 2017 15:37:25").getTime();
 
 // Update the count down every 1 second
@@ -69,7 +80,7 @@ $(document).ready(function () {
 
       // comment this all to have chance to make changes
       document.getElementById('video-loader').addEventListener('ended', handleVideoEnd, false);
-      function handleVideoEnd(e) {
+      function handleVideoEnd() {
         $('.video-container')[0].style.display = 'none'
 
         $('#fullpage').fullpage({
@@ -85,6 +96,9 @@ $(document).ready(function () {
           }
         });
         }
+
+        //fallback function if video lagged
+        setTimeout(handleVideoEnd, 6000)
 
         // $('.video-container')[0].style.display = 'none'
         //
@@ -113,5 +127,16 @@ function toggleMainModal(toOpen) {
     modal.style.display = 'flex'
   } else {
     modal.style.display = 'none'
+  }
+}
+
+function toggleHackenModal(toOpen, slideIndex = 0) {
+  var modal = $('.hacken-modal-container')[0]
+
+  hackenSlider.slideTo(slideIndex)
+  if (toOpen) {
+    modal.style.visibility = 'visible'
+  } else {
+    modal.style.visibility = 'hidden'
   }
 }

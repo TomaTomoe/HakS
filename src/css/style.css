@@ -361,7 +361,7 @@ p.hk-about-descr {
   max-width: 400px;
 }
 
-.video-container, .main-modal-container {
+.video-container, .main-modal-container, .hacken-modal-container {
   position: absolute;
   top: 0;
   z-index: 8;
@@ -370,13 +370,19 @@ p.hk-about-descr {
   height: 100vh;
 }
 
-.main-modal-container {
+.main-modal-container, .hacken-modal-container {
   background: rgba(0, 0, 0, 0.95);
   border-bottom: 5px solid #31a4b2;
   top: -5px;
   display: none;
   justify-content: center;
   align-items: center;
+}
+
+.hacken-modal-container {
+  visibility: hidden;
+  display: flex;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .main-modal-content {
@@ -386,6 +392,31 @@ p.hk-about-descr {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.hacken-modal-content {
+  width: 30%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hacken-question {
+  margin-top: 15px;
+  font-size: 30px;
+  line-height: 1.5;
+  color: #31a4b2;
+  text-transform: uppercase;
+}
+
+.hacken-answer {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 100;
+  margin-top: 13px;
+}
+
 
 .modal-x-mark {
   float: right;
@@ -420,6 +451,7 @@ p.hk-about-descr {
   border: none;
   background: #31a4b2;
   width: 150px;
+  font-size: 16px;
   height: 45px;
   color: white;
 }
@@ -578,6 +610,7 @@ p.hk-about-descr {
 }
 
 .hk-hacken-figure {
+  z-index: 1;
   height: 500px;
   width: 800px;
   margin: auto;
@@ -589,8 +622,11 @@ p.hk-about-descr {
 }
 
 .hk-hacken-figure>div {
+  z-index: 2;
   position: absolute;
+  cursor: pointer;
 }
+
 
 #hacken-1 {
   top: 110px;
@@ -1307,6 +1343,11 @@ h2+hr {
 
 .block-title-with-pagination .slider-pagination {
   flex: 1;
+}
+
+.block-title-with-pagination.hacken {
+  align-items: flex-end;
+  padding-top: 3em;
 }
 
 .hk-team h2 {

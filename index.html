@@ -37,6 +37,81 @@
     </div>
   </div>
   <!--  -->
+
+
+  <!-- Hacken modal container -->
+  <div class="hacken-modal-container">
+    <div class="hacken-modal-content">
+      <div class="modal-header">
+        <div class="modal-x-mark">
+          <!-- <i class="zmdi zmdi-close"></i> -->
+          <img onclick="toggleHackenModal(false)" src="./src/img/close-modal-icon.png" alt="">
+        </div>
+      </div>
+      <div class="modal-form">
+        <div class="hacken-slider">
+          <div id="swiper-container-hacken" class="swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="hacken-question">
+                  Hacken Accelerator
+                </div>
+                <div class="hacken-answer">
+                  This token sale will also enable us to create the community center for incubating and growing various cybersecurity projects imagined and developed by our community members. Participating startups are going to be selected by public board of cybersecurity and computer technology experts. The very first talents are going to be selected during HackIT 2017. We will sign option agreements with the teams that were selected by the public board. After the completion of acceleration program, we will execute our option, which should cover around 25% of the equity.
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="hacken-question">
+                  HackIT Conference
+                </div>
+                <div class="hacken-answer">
+                  HackIT is an annual international forum on cybersecurity held in Kharkiv, Ukraine. The first HackIT Conference gathered 450 participants from two countries, the second had 650 participants from six countries. Besides the traditional speaking panels featuring local and international experts, HackIT runs a number of specialized cybersecurity competitions, which are free for everyone to participate. These are: HackIT Online CTF, Battle of Hackers, Cyberdetective OSINT Challenge and HackIT Cup. Please see our white paper for more details on each competition. The final of HackIT Cup 2017 will be held on board of the World’s biggest airplane Antonov-225 Mriya.
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="hacken-question">
+                  HackenProof Platform
+                </div>
+                <div class="hacken-answer">
+                  HackenProof is a bug bounty and penetration testing services marketplace platform created by white hat hackers and the blockchain community based on the principle of fair share. This is a place where the two communities can cooperate and support each other. HackenProof offers one of the highest levels of campaign flexibility that is currently available on the market. Campaigns can be ‘invite only’ or public. Client can select self managed or dedicated team leader approach to managing the campaign. On top of that, customer self-service portal allows running a number of wizards and bots to streamline the discovery of vulnerabilities.
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="hacken-question">
+                  Unreported Zero-Day Remuneration Platform
+                </div>
+                <div class="hacken-answer">
+                  Hacken will support bright technology experts, by financially rewarding their original and previously undisclosed zero-day research. For this purpose we will create a remuneration fund that will specialize in acquiring unreported zero-day vulnerabilities. The plan is to invest a substantial amount of funds raised during this token sale in the research of regulatory and legislative framework in major jurisdictions, in particular — Europe. The ultimate goal is to create a transparent regulatory environment for our fund before it starts operations.
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="hacken-question">
+                  Cybersecurity Analytics Center
+                </div>
+                <div class="hacken-answer">
+                  We are going to create a team of analysts, who will perform fundamental cybersecurity research, as well as monitor and audit existing and upcoming cybersecurity products. Our team will then provide outstaffed corporate cybersecurity research, expert clearance and independent research and comparison of these products. The primary areas of research for the Center team are: blockchain security, vulnerabilities and countermeasures; classification, comparison and market research of cybersecurity products; cryptography, secure communications and data protection; big data analytics and visualisation in cybersecurity.
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="block-title-with-pagination hacken">
+          <div class="slider-pagination hacken">
+            <div class="swiper-button-prev hacken "></div>
+            <div class="swiper-pagination hacken"></div>
+            <div class="swiper-button-next hacken"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
   <div id="fullpage">
 
   <div class="hk-screen hk-main section">
@@ -45,8 +120,6 @@
           <source src="./src/video/onload.mp4" />
       </video>
     </div>
-
-
 
 
     <header class="hk-header">
@@ -232,11 +305,11 @@
       <div class="not-relative">
         <h2>What is Hacken</h2>
         <div class="hk-hacken-figure absolute-center margin-none">
-          <div id="hacken-1">Hacken accelerator <span class="info-icon"><i class="zmdi zmdi-info-outline"></i></span></div>
-          <div id="hacken-2">Annual HackIT <br />Conference <span class="info-icon"><i class="zmdi zmdi-info-outline"></i></span></div>
-          <div id="hacken-3">HackenProof <span class="info-icon"><i class="zmdi zmdi-info-outline"></i></span></div>
-          <div id="hacken-4">CyberSecurity <br />analytics center <span class="info-icon"><i class="zmdi zmdi-info-outline"></i></span></div>
-          <div id="hacken-5">Zero-day remuneration <br />platform <span class="info-icon"><i class="zmdi zmdi-info-outline"></i></span></div>
+          <div onclick="toggleHackenModal(true, 0)" id="hacken-1">Hacken accelerator <span class="info-icon"><i class="zmdi zmdi-info-outline"></i></span></div>
+          <div onclick="toggleHackenModal(true, 1)" id="hacken-2">Annual HackIT <br />Conference <span class="info-icon"><i class="zmdi zmdi-info-outline"></i></span></div>
+          <div onclick="toggleHackenModal(true, 2)" id="hacken-3">HackenProof <span class="info-icon"><i class="zmdi zmdi-info-outline"></i></span></div>
+          <div onclick="toggleHackenModal(true, 4)" id="hacken-4">CyberSecurity <br />analytics center <span class="info-icon"><i class="zmdi zmdi-info-outline"></i></span></div>
+          <div onclick="toggleHackenModal(true, 3)" id="hacken-5">Zero-day remuneration <br />platform <span class="info-icon"><i class="zmdi zmdi-info-outline"></i></span></div>
         </div>
       </div>
     </div>
