@@ -18,19 +18,42 @@
 </head>
 
 <body>
+  <!-- Main modal container -->
+  <div class="main-modal-container">
+    <div class="main-modal-content">
+      <div class="modal-header">
+        <div class="modal-x-mark">
+          <!-- <i class="zmdi zmdi-close"></i> -->
+          <img onclick="toggleMainModal(false)" src="./src/img/close-modal-icon.png" alt="">
+        </div>
+      </div>
+      <div class="modal-form">
+        <h3 class="modal-form-desc">Subscribe to our newsletter</h3>
+        <input class="modal-form-input" type="text" name="" placeholder="Your e-mail" value="">
+      </div>
+      <div class="modal-footer">
+        <button class="modal-submit-button" type="button" name="" value="submit">Subscribe me</button>
+      </div>
+    </div>
+  </div>
+  <!--  -->
   <div id="fullpage">
 
   <div class="hk-screen hk-main section">
     <div class="video-container">
-      <!-- <video id="video-loader" preload autoplay>
+      <video id="video-loader" preload autoplay>
           <source src="./src/video/onload.mp4" />
-      </video> -->
+      </video>
     </div>
+
+
+
+
     <header class="hk-header">
-      <a class="hk-subscribe" href="">
+      <div class="hk-subscribe">
         <span class="hk-subscribe-icon"><i class="zmdi zmdi-email"></i></span>
-        <span class="hk-subscribe-link">Subscribe to our newsletter</span>
-      </a>
+        <span onclick="toggleMainModal(true)" class="hk-subscribe-link">Subscribe to our newsletter</span>
+      </div>
 
       <ul class="hk-social">
         <li class="hk-social-link">
@@ -699,10 +722,10 @@
               </div>
             </div>
             <div class="hk-header">
-              <a class="hk-subscribe" href="">
+              <div class="hk-subscribe" href="">
                 <span class="hk-subscribe-icon"><i class="zmdi zmdi-email"></i></span>
-                <span class="hk-subscribe-link">Subscribe to our newsletter</span>
-              </a>
+                <span onclick="toggleMainModal(true)" class="hk-subscribe-link">Subscribe to our newsletter</span>
+              </div>
 
               <ul class="hk-social">
                 <li class="hk-social-link">

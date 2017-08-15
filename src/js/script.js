@@ -67,25 +67,9 @@ $(document).ready(function () {
       }, 1000);
 
 
-      //comment this all to have chance to make changes
-      // document.getElementById('video-loader').addEventListener('ended', handleVideoEnd, false);
-      // function handleVideoEnd(e) {
-      //   $('.video-container')[0].style.display = 'none'
-      //
-      //   $('#fullpage').fullpage({
-      //     menu: '.hk-navigation',
-      //     onLeave: function(index, nextIndex, direction){
-      //       console.log('nextIndex', nextIndex)
-      //       $('.hk-nav-item').removeClass('active')
-      //       if (nextIndex === 12) {
-      //         setTimeout(() => $($('.hk-nav-item')[nextIndex-1]).addClass('active'), 100)
-      //       } else {
-      //         setTimeout(() => $($('.hk-nav-item')[nextIndex-2]).addClass('active'), 100)
-      //       }
-      //     }
-      //   });
-      //   }
-
+      // comment this all to have chance to make changes
+      document.getElementById('video-loader').addEventListener('ended', handleVideoEnd, false);
+      function handleVideoEnd(e) {
         $('.video-container')[0].style.display = 'none'
 
         $('#fullpage').fullpage({
@@ -100,8 +84,34 @@ $(document).ready(function () {
             }
           }
         });
+        }
+
+        // $('.video-container')[0].style.display = 'none'
+        //
+        // $('#fullpage').fullpage({
+        //   menu: '.hk-navigation',
+        //   onLeave: function(index, nextIndex, direction){
+        //     console.log('nextIndex', nextIndex)
+        //     $('.hk-nav-item').removeClass('active')
+        //     if (nextIndex === 12) {
+        //       setTimeout(() => $($('.hk-nav-item')[nextIndex-1]).addClass('active'), 100)
+        //     } else {
+        //       setTimeout(() => $($('.hk-nav-item')[nextIndex-2]).addClass('active'), 100)
+        //     }
+        //   }
+        // });
 });
 
 function onNavClick(e, i) {
   $.fn.fullpage.moveTo(i+1);
+}
+
+function toggleMainModal(toOpen) {
+  var modal = $('.main-modal-container')[0]
+  console.log(modal);
+  if (toOpen) {
+    modal.style.display = 'flex'
+  } else {
+    modal.style.display = 'none'
+  }
 }
