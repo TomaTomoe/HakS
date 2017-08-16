@@ -12,7 +12,7 @@
 
   .hk-logo {
     position: initial;
-
+    padding: 14px 0 0 14px;
     width: 40px;
 
     > img {
@@ -41,5 +41,87 @@
     position: initial;
     margin: 0;
     font-size: 14px;
+  }
+}
+
+.section-home {
+  .hk-central_block {
+    margin: 0 0 0 14px;
+
+    .main-page-links {
+      justify-content: space-around;
+      padding: 0 25px 0 0px;
+      a {
+        margin: 0;
+      }
+    }
+
+    > div {
+      height: calc(100vh - 135px);
+      width: 100%;
+
+      h1 {
+        font-size: 27px;
+      }
+
+      p {
+        font-size: 17px;
+      }
+    }
+  }
+
+  .hk-timer {
+    height: 90px;
+    display: flex;
+
+    .hk-time {
+      display: flex;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-width: 200px;
+      height: 90px;
+
+      .hk-time-header {
+        padding: 0 0 5px 0;
+        font-size: 16px;
+      }
+
+      .hk-bonus_timer-time__main {
+        height: auto;
+        font-size: 16px;
+
+        .hk-bonus_timer-timetick__main {
+          min-width: 50px;
+
+          .timetick-time {
+            font-size: 16px;
+          }
+          .timetick-desc {
+            font-size: 12px;
+          }
+        }
+
+
+      }
+    }
+
+    .hk-amount {
+      height: 90px;
+
+      .hk-amount-header {
+        padding-right: 10px;
+        width: auto;
+        font-size: 17px;
+      }
+      .hk-amount-number {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        padding: 0;
+        font-size: 16px;
+      }
+    }
   }
 }
