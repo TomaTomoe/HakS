@@ -1,3 +1,32 @@
+.hacken-modal-container {
+  .hacken-modal-content {
+    width: 70%;
+    height: 80%;
+
+    .hacken-answer {
+      font-size: 18px;
+    }
+  }
+}
+
+.main-modal-container {
+  .main-modal-content {
+    width: 70%;
+    height: 40%;
+}
+}
+
+.advisor-modal-container {
+  .advisor-modal-content {
+    width: 60%;
+    height: 50%;
+
+    .modal-form-desc-white {
+      font-size: 18px;
+    }
+  }
+}
+
 .hk-desktop {
   display: none;
 }
@@ -34,6 +63,7 @@
   #hk-language-select {
     margin-top: 30px;
     font-size: 20px;
+    display: none;
   }
 }
 
@@ -663,6 +693,11 @@ ul.hk-social {
     box-sizing: border-box;
   }
 }
+
+
+
+
+
 //TODO remove when commit
 
 .hk-navigation {
