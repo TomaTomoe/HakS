@@ -9,6 +9,9 @@
   left: 0;
   right: 0;
   margin: 0;
+  height: 60px;
+  padding-bottom: 21px;
+  background: #282828;
 }
 
 .hk-logo {
@@ -123,13 +126,14 @@ ul.hk-social {
   font-size: 27px;
   text-decoration: none;
 }
+
 .hk-main .hk-central_block {
   margin: 0 55px;
   height: 100vh;
 }
 
 .hk-central_block {
-  margin: 80px 55px 0 55px;
+  margin: 80px 55px 0;
   height: 100vh;
 
   > div {
@@ -178,26 +182,183 @@ ul.hk-social {
   h2 {
     margin-top: 50px;
   }
+
   p {
     width: 100%;
     float: none;
     padding-left: 40px;
     box-sizing: border-box;
   }
+
   .hk-about-quote_text {
     margin-top: 0;
   }
+
   .hk-about-descr {
     max-width: unset;
   }
+
   .hk-central_block {
     align-items: start;
   }
 }
 
+.hk-timeline {
+  .hk-central_block > div {
+    margin-top: 0;
 
+    .hk-timeline-figure {
+      background: url("../img/timeline-tablet.png");
+      background-repeat: no-repeat;
+      background-position: 50% 60px;
+      background-size: contain;
+      height: 850px;
+      width: 500px;
 
+      .hk-timeline-line-1,
+      .hk-timeline-line-2,
+      .hk-timeline-line-3,
+      .hk-timeline-line-4 {
+        height: 100%;
+        width: 100%;
+        padding-top: 0;
+        position: absolute;
+        margin-left: 0;
+      }
 
+      .hk-timeline-line-1 .hk-cell-2,
+      .hk-timeline-line-1 .hk-cell-3,
+      .hk-timeline-line-1 .hk-cell-4 {
+        margin-left: 0;
+      }
+
+      .hk-timeline-line-1 {
+        .hk-cell-1 {
+          position: absolute;
+          top: 60px;
+          left: 72px;
+        }
+
+        .hk-cell-2 {
+          position: absolute;
+          top: 140px;
+          right: 80px;
+        }
+
+        .hk-cell-3 {
+          position: absolute;
+          top: 225px;
+          left: 55px;
+        }
+
+        .hk-cell-4 {
+          position: absolute;
+          top: 305px;
+          right: 50px;
+        }
+      }
+
+      .hk-timeline-line-2 {
+        .hk-cell-1 {
+          position: absolute;
+          top: 138px;
+          left: 70px;
+          font-size: 18px;
+          margin: 0;
+        }
+
+        .hk-cell-2 {
+          position: absolute;
+          top: 208px;
+          right: 45px;
+          margin: 0;
+          font-size: 18px;
+        }
+
+        .hk-cell-3 {
+          position: absolute;
+          top: 280px;
+          left: 0;
+          width: 208px;
+          font-size: 18px;
+          margin: 0;
+        }
+
+        .hk-cell-4 {
+          position: absolute;
+          top: 380px;
+          right: 80px;
+          font-size: 18px;
+          margin: 0;
+        }
+      }
+
+      .hk-timeline-line-3 {
+        .hk-cell-1 {
+          position: absolute;
+          top: 390px;
+          left: 40px;
+        }
+
+        .hk-cell-2 {
+          position: absolute;
+          top: 465px;
+          right: 15px;
+          margin: 0;
+        }
+
+        .hk-cell-3 {
+          position: absolute;
+          top: 552px;
+          left: 55px;
+          margin: 0;
+        }
+
+        .hk-cell-4 {
+          position: absolute;
+          top: 635px;
+          right: 70px;
+          margin: 0;
+        }
+      }
+
+      .hk-timeline-line-4 {
+        .hk-cell-1 {
+          position: absolute;
+          top: 463px;
+          left: 39px;
+          font-size: 18px;
+          margin: 0;
+        }
+
+        .hk-cell-2 {
+          position: absolute;
+          top: 540px;
+          right: 50px;
+          font-size: 18px;
+          margin: 0;
+        }
+
+        .hk-cell-3 {
+          position: absolute;
+          top: 608px;
+          left: 55px;
+          width: 160px;
+          font-size: 18px;
+          margin: 0;
+        }
+
+        .hk-cell-4 {
+          position: absolute;
+          top: 710px;
+          right: 90px;
+          margin: 0;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
 //TODO remove when commit
 
 .hk-navigation {
