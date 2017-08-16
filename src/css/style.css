@@ -26,6 +26,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 240px;
 }
 
 .hk-header-last {
@@ -1441,6 +1442,7 @@ h2+hr {
 
 .team-slider .swiper-slide .team-image, .team-image-active {
   max-width: 280px;
+  width: 100%;
   height: auto;
   border-bottom: 1px solid #31a4b2;
 }
