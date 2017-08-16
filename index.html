@@ -16,9 +16,11 @@
   <link href="src/css/swiper.css" rel="stylesheet">
   <link rel="stylesheet" href="https://i.icomoon.io/public/9a1e688c69/UntitledProject3/style.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" />
+  <link rel="stylesheet" media="all and (min-width: 768px) and (max-width: 1223px)" href="src/css/tablet.css">
 </head>
 
 <body>
+<<<<<<< HEAD
   <!-- Main modal container -->
   <div class="main-modal-container">
     <div class="main-modal-content">
@@ -137,6 +139,26 @@
     </div>
   </div>
   <!--  -->
+=======
+
+  <header class="hk-header  hk-tablet">
+    <a class="hk-logo" href=""><img src="src/img/hacken-logo.png" alt="Hacken" /></a>
+
+    <a class="hk-subscribe" href="">
+      <span class="hk-subscribe-icon"><i class="zmdi zmdi-email"></i></span>
+      <span class="hk-subscribe-link">Subscribe to our newsletter</span>
+    </a>
+
+    <div id="hk-language-select">
+      <a class="hk-lang-eng active" href=""> Eng </a>
+      <a class="hk-lang-ru" href=""> Ru </a>
+    </div>
+
+    <div id="hk-tablet_menu">
+      <i class="zmdi zmdi-menu"></i>
+    </div>
+  </header>
+>>>>>>> tablet
 
 
   <div id="fullpage">
@@ -147,10 +169,15 @@
           <source src="./src/video/onload.mp4" />
       </video>
     </div>
+<<<<<<< HEAD
 
 
     <header class="hk-header">
       <div class="hk-subscribe">
+=======
+    <header class="hk-header hk-desktop">
+      <a class="hk-subscribe" href="">
+>>>>>>> tablet
         <span class="hk-subscribe-icon"><i class="zmdi zmdi-email"></i></span>
         <span onclick="toggleMainModal(true)" class="hk-subscribe-link">Subscribe to our newsletter</span>
       </div>
@@ -199,7 +226,42 @@
     </header>
 
     <nav class="hk-navigation">
-      <a class="hk-logo" href=""><img src="src/img/hacken-logo.png" alt="Hacken" /></a>
+      <a class="hk-logo hk-desktop" href=""><img src="src/img/hacken-logo.png" alt="Hacken" /></a>
+
+      <div class="hk-tablet hk-tablet-menu_header">
+        <ul class="hk-social">
+          <li class="hk-social-link">
+            <a href="#" role="link">
+              <span class="icon-socials ico-slack"></span>
+            </a>
+          </li>
+          <li class="hk-social-link">
+            <a href="#" role="link">
+              <i class="zmdi zmdi-facebook"></i>
+            </a>
+          </li>
+          <li class="hk-social-link">
+            <a href="#" role="link">
+              <i class="zmdi zmdi-twitter"></i>
+            </a>
+          </li>
+          <li class="hk-social-link">
+            <a href="#" role="link">
+              <i class="zmdi zmdi-reddit"></i>
+            </a>
+          </li>
+          <li class="hk-social-link">
+            <a href="#" role="link">
+              <span class="icon-socials ico-messenger"></span>
+            </a>
+          </li>
+          <li class="hk-social-link">
+            <a href="#" role="link">
+              <span class="icon-socials ico-bitcoin"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
 
       <ul class="hk-nav-menu">
         <li><div onclick="onNavClick(this, 1)" class="hk-nav-item"><span class="hk-nav-item_name">About</span><span class="hk-menu-circle"></span></div></li>

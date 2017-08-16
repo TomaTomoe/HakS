@@ -1627,3 +1627,8 @@ h2 {
     margin-top: 10px;
 }
 }
+@media all and (min-width: 769px) {
+  .hk-tablet {
+    display: none;
+  }
+}
