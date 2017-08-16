@@ -5,24 +5,26 @@
 .hk-header.hk-tablet {
   position: fixed;
   z-index: 6;
-      padding: 0px 130px 0 170px;
+  padding: 0 130px 0 170px;
   left: 0;
   right: 0;
+  margin: 0;
 }
 
 .hk-logo {
-left: 55px;
-top: 20px;
-position: absolute;
+  left: 55px;
+  top: 20px;
+  position: absolute;
 }
 
 .hk-subscribe {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 #hk-language-select {
-    margin-top: 40px;
+  margin-top: 40px;
 }
+
 #hk-tablet_menu {
   position: absolute;
   top: 0;
@@ -37,56 +39,168 @@ position: absolute;
 }
 
 .hk-navigation {
-    display: block;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 7;
-    bottom: 0;
-    width: 620px;
-    background: #303030;
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 7;
+  bottom: 0;
+  width: 620px;
+  background: #303030;
 }
+
 .hk-nav-item {
-    color: #ffffff;
-    font-size: 20pt;
-    font-weight: 300;
-        margin-right: 60px;
+  color: #ffffff;
+  font-size: 20pt;
+  font-weight: 300;
+  margin-right: 60px;
 }
+
 .hk-nav-menu {
-    margin-top: 120px;
+  margin-top: 120px;
 }
 
 .hk-nav-menu li {
-    padding: 2vh 0;
+  padding: 2vh 0;
 }
 
-
-.hk-nav-item.active, .hk-nav-item:hover {
-    color: #ffffff;
+.hk-nav-item.active,
+.hk-nav-item:hover {
+  color: #ffffff;
 }
+
 .hk-nav-item_name {
   visibility: visible;
 }
-.hk-menu-circle, .hk-nav-item.active .hk-menu-circle, .hk-nav-item:hover .hk-menu-circle,
-.hk-nav-item .hk-menu-circle::after {
+
+.hk-menu-circle,
+.hk-nav-item .hk-menu-circle::after,
+.hk-nav-item.active .hk-menu-circle,
+.hk-nav-item:hover .hk-menu-circle {
   display: none;
 }
 
 .hk-tablet-menu_header {
-    position: absolute;
-    left: 0;
-    right: 0;
-    background: #119aa9;
-    height: 80px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #119aa9;
+  height: 80px;
+
+  .tablet-toggle_menu {
+    display: inline-block;
+    float: right;
+    padding: 22px 32px;
+    background: #28a4b3;
+
+    a {
+      color: #ffffff;
+      font-size: 30px;
+
+      :focus,
+      :hover {
+        color: #ffffff;
+        outline: none;
+      }
+    }
+  }
 }
 
 ul.hk-social {
-    margin-top: 26px;
+  margin-top: 18px;
+  margin-bottom: 12px;
+  width: 530px;
+  padding-left: 0;
+
+  li {
+    width: 80px;
+  }
 }
 
 .hk-social-link a {
-    padding: 0px 20px;
-    color: #fff;
-    font-size: 27px;
-    text-decoration: none;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 27px;
+  text-decoration: none;
 }
+.hk-main .hk-central_block {
+  margin: 0 55px;
+  height: 100vh;
+}
+
+.hk-central_block {
+  margin: 80px 55px 0 55px;
+  height: 100vh;
+
+  > div {
+    width: 100%;
+  }
+}
+
+.hk-timer {
+  width: 100%;
+  background: #31a4b2;
+
+  .hk-time {
+    width: calc(60% - 55px);
+    padding-left: 55px;
+
+    .hk-bonus_timer-time__main {
+      height: 70px;
+      text-align: center;
+    }
+  }
+
+  .hk-amount {
+    width: 40%;
+    margin-left: 0;
+
+    .hk-amount-header {
+      width: 50%;
+      display: inline-block;
+      float: left;
+    }
+
+    .hk-amount-number {
+      float: right;
+      padding-right: 50px;
+    }
+  }
+
+  .hk-amount-header,
+  .hk-time-header {
+    padding-top: 15px;
+    float: none;
+  }
+}
+
+.hk-about {
+  h2 {
+    margin-top: 50px;
+  }
+  p {
+    width: 100%;
+    float: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+  }
+  .hk-about-quote_text {
+    margin-top: 0;
+  }
+  .hk-about-descr {
+    max-width: unset;
+  }
+  .hk-central_block {
+    align-items: start;
+  }
+}
+
+
+
+
+//TODO remove when commit
+
+.hk-navigation {
+  display: none;
+}
+// end

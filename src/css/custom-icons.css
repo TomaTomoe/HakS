@@ -44,3 +44,20 @@
   content: "\e902";
   font-size: 32px;
 }
+
+
+  .hk-tablet .ico-messenger:before {
+    content: "\e900";
+    font-size: 44px;
+    vertical-align: -4px;
+  }
+  .hk-tablet .ico-bitcoin:before {
+    content: "\e901";
+    font-size: 50px;
+vertical-align: -4px;
+  }
+  .hk-tablet .ico-slack:before {
+    content: "\e902";
+    font-size: 44px;
+    vertical-align: -4px;
+  }
