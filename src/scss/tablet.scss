@@ -624,7 +624,38 @@ ul.hk-social {
     }
   }
 }
+
+.hk-bounty {
+  h2 {
+    margin-top: 0;
+  }
+
+  hr {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  p {
+    width: 100%;
+
+    > br {
+      display: none;
+    }
+  }
+
+  .hk-bounty-quote_text {
+    margin-top: 0;
+  }
+
+  .hk-bounty-panes_container {
+    float: none;
+    width: 100%;
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+}
 //TODO remove when commit
+
 .hk-navigation {
   display: none;
 }
