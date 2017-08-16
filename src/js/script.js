@@ -116,6 +116,9 @@ $(document).ready(function () {
 });
 
 function onNavClick(e, i) {
+  var menu = $('.hk-navigation')[0]
+  menu.style.display = 'none'
+
   $.fn.fullpage.moveTo(i+1);
 }
 
@@ -148,4 +151,15 @@ function toggleAdvisorModal(toOpen) {
   } else {
     modal.style.display = 'none'
   }
+}
+
+function toggleTabletMenu(toOpen) {
+  console.log('toopen', toOpen);
+  var menu = $('.hk-navigation')[0]
+  if (toOpen) {
+    menu.style.display = 'block'
+  } else {
+    menu.style.display = 'none'
+  }
+  return false;
 }
