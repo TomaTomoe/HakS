@@ -3,6 +3,7 @@ var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var gutil = require('gulp-util');
 var plumber = require('gulp-plumber');
+var sass = require('gulp-sass');
 
 var onError = function (err) {
     gutil.beep();
@@ -10,6 +11,7 @@ var onError = function (err) {
 };
 
 var src = {
+    sass: 'src/scss/*.scss',
     css: 'src/css/**/*.css',
     html: ['*.html'],
     js: 'src/js/**/*.js',
@@ -34,4 +36,14 @@ gulp.task('minify-js', function () {
         .pipe(gulp.dest(src.jsmin))
 });
 
-gulp.task('default', ['serve']);
+gulp.task('sass', function () {
+ return gulp.src(src.sass)
+   .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+   .pipe(gulp.dest('src/css/'));
+});
+
+gulp.task('sass:watch', function () {
+  gulp.watch(src.sass, ['sass']);
+});
+
+gulp.task('default', ['serve', 'sass:watch']);
