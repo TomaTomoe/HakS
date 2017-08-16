@@ -121,8 +121,8 @@ $(document).ready(function () {
 });
 
 function onNavClick(e, i) {
-  var menu = $('.hk-navigation')[0]
-  menu.style.display = 'none'
+  // var menu = $('.hk-navigation')[0]
+  // menu.style.display = 'none'
 
   $.fn.fullpage.moveTo(i+1);
 }
