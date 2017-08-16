@@ -1,11 +1,13 @@
 #fullpage {
   .hk-screen {
     height: 100%;
+
+    .hk-central_block {
+      height: 100%;
+      margin: 0 14px;;
+    }
   }
-  .hk-central_block {
-    height: 100%;
-    margin: 0 14px;;
-  }
+
 
 
   .hk-about {
@@ -28,6 +30,24 @@
         .hk-about-descr {
           padding-left: 0;
           font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .hk-timeline {
+    padding-bottom: 20px;
+    .hk-central_block {
+      .not-relative {
+        .hk-timeline-figure {
+          display: none;
+        }
+        .hk-timeline-figure-mobile {
+          display: block;
+          background-image: url(./../img/timeline-ilustration.png);
+          min-height: 435px;
+          background-repeat: no-repeat;
+          background-position: center;
         }
       }
     }

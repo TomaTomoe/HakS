@@ -105,19 +105,19 @@ $(document).ready(function () {
       //   setTimeout(handleVideoEnd, 6000)
 
         $('.video-container')[0].style.display = 'none'
-        
-        $('#fullpage').fullpage({
-          menu: '.hk-navigation',
-          onLeave: function(index, nextIndex, direction){
-            console.log('nextIndex', nextIndex)
-            $('.hk-nav-item').removeClass('active')
-            if (nextIndex === 12) {
-              setTimeout(() => $($('.hk-nav-item')[nextIndex-1]).addClass('active'), 100)
-            } else {
-              setTimeout(() => $($('.hk-nav-item')[nextIndex-2]).addClass('active'), 100)
-            }
-          }
-        });
+
+        // $('#fullpage').fullpage({
+        //   menu: '.hk-navigation',
+        //   onLeave: function(index, nextIndex, direction){
+        //     console.log('nextIndex', nextIndex)
+        //     $('.hk-nav-item').removeClass('active')
+        //     if (nextIndex === 12) {
+        //       setTimeout(() => $($('.hk-nav-item')[nextIndex-1]).addClass('active'), 100)
+        //     } else {
+        //       setTimeout(() => $($('.hk-nav-item')[nextIndex-2]).addClass('active'), 100)
+        //     }
+        //   }
+        // });
 });
 
 function onNavClick(e, i) {
