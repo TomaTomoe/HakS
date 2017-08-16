@@ -12,6 +12,11 @@ $(document).ready(function () {
     var swiper2 = new Swiper('#swiper-container-team', {
         pagination: '.swiper-pagination.team',
         slidesPerView: 3,
+        breakpoints: {
+          1223: {
+            slidesPerView: 1
+          }
+        },
         paginationClickable: true,
         spaceBetween: 50,
         nextButton: '.swiper-button-next.team',
