@@ -39,6 +39,9 @@
     padding-bottom: 20px;
     .hk-central_block {
       .not-relative {
+        h2 {
+          font-size: 26px;
+        }
         .hk-timeline-figure {
           display: none;
         }
@@ -48,6 +51,56 @@
           min-height: 435px;
           background-repeat: no-repeat;
           background-position: center;
+        }
+      }
+    }
+  }
+
+  .hk-hacken {
+    min-height: 500px;
+
+    .hk-central_block {
+
+      .not-relative {
+        h2 {
+          font-size: 26px;
+          margin-top: 10px;
+        }
+        .hk-hacken-figure {
+          padding-right: 14px;
+
+          height: 308px;
+          background: url(../img/screen-4-content-image.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          div {
+            font-size: 12px;
+          }
+
+          #hacken-1 {
+            top: 80px;
+            left: 280px;
+          }
+
+          #hacken-2 {
+            top: 110px;
+            right: 285px;
+          }
+
+          #hacken-3 {
+            top: 186px;
+            left: 311px;
+          }
+
+          #hacken-4 {
+            bottom: 26px;
+            right: 280px;
+          }
+
+          #hacken-5 {
+            bottom: 12px;
+            left: 282px;
+          }
         }
       }
     }
