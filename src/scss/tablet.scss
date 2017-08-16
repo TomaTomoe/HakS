@@ -594,8 +594,37 @@ ul.hk-social {
     padding-left: 0;
   }
 }
-//TODO remove when commit
 
+.hk-bonuses {
+  h2 {
+    margin: 0;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  .hk-bonuses-figure {
+    margin-top: 30px;
+
+    .hk-bonus_timer {
+      padding: 30px;
+      box-sizing: border-box;
+      float: none;
+      margin: auto;
+
+      p {
+        margin: 20px 0;
+      }
+    }
+
+    .hk-bonuse-circle_container {
+      padding: 0;
+      margin-top: 30px;
+    }
+  }
+}
+//TODO remove when commit
 .hk-navigation {
   display: none;
 }
