@@ -152,7 +152,7 @@
       <a class="hk-lang-ru" href=""> Ru </a>
     </div>
 
-    <div id="hk-tablet_menu">
+    <div onclick="toggleTabletMenu(true)" id="hk-tablet_menu">
       <i class="zmdi zmdi-menu"></i>
     </div>
   </header>
@@ -252,8 +252,8 @@
             </a>
           </li>
         </ul>
-        <div class="tablet-toggle_menu">
-          <a href=""><i class="zmdi zmdi-close"></i></a>
+        <div onclick="toggleTabletMenu(false)" class="tablet-toggle_menu">
+          <a onclick="return false" href=""><i class="zmdi zmdi-close"></i></a>
         </div>
       </div>
 
