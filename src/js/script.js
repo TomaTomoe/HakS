@@ -105,7 +105,7 @@ $(document).ready(function () {
       //   setTimeout(handleVideoEnd, 6000)
 
         $('.video-container')[0].style.display = 'none'
-
+        
         $('#fullpage').fullpage({
           menu: '.hk-navigation',
           onLeave: function(index, nextIndex, direction){

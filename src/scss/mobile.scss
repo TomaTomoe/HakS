@@ -1,3 +1,39 @@
+#fullpage {
+  .hk-screen {
+    height: 100%;
+  }
+  .hk-central_block {
+    height: 100%;
+    margin: 0 14px;;
+  }
+
+
+  .hk-about {
+    &::after {
+      background-image: url(./../img/bg-slide-2.png);
+    }
+    .hk-central_block {
+      > div {
+        > h2 {
+          font-size: 26px;
+        }
+        > hr {
+          margin: 20px 0;
+        }
+
+        .hk-about-quote_text {
+          font-size: 20px;
+          padding-left: 20px
+        }
+        .hk-about-descr {
+          padding-left: 0;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
 .hk-header.hk-tablet {
   position: fixed;
   z-index: 6;
