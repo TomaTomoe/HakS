@@ -570,7 +570,32 @@ ul.hk-social {
     align-items: start;
   }
 }
+
+.hk-details {
+  h2 {
+    margin-top: 0;
+
+    > br {
+      display: none;
+    }
+  }
+
+  hr {
+    margin-top: 0;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  .hk-details-panes_container {
+    float: left;
+    width: 100%;
+    padding-left: 0;
+  }
+}
 //TODO remove when commit
+
 .hk-navigation {
   display: none;
 }
