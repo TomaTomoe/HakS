@@ -20,6 +20,10 @@ $(document).ready(function () {
         breakpoints: {
           1223: {
             slidesPerView: 1
+          },
+          767: {
+            slidesPerView: 1,
+            spaceBetween: 0,
           }
         },
         paginationClickable: true,

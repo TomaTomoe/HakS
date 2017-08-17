@@ -608,12 +608,97 @@ body {
 
         .hk-bounty-pane {
           width: 50%;
+
           .hk-bounty_diagramm {
             height: 140px;
             width: 140px;
           }
+
           h6 {
             font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .hk-team {
+    min-height: 100%;
+
+    .hk-central_block {
+      height: 100%;
+      padding: 0 30px;
+      margin: 0;
+
+      .not-relative {
+        .block-title-with-pagination {
+          h2 {
+            font-size: 26px;
+            margin-top: 30px;
+          }
+
+          .slider-pagination {
+            position: relative;
+            top: 0;
+            width: 100%;
+            max-width: 280px;
+            left: auto;
+            margin: 0 auto 20px;
+            box-sizing: border-box;
+            justify-content: space-between;
+            padding-left: 0;
+            z-index: 3;
+          }
+        }
+
+        .team-slider {
+          .team-image,
+          .team-image-active {
+            max-width: 350px;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            height: auto;
+            right: auto;
+          }
+
+          .swiper-container {
+            .swiper-slide {
+              padding-bottom: 30px;
+
+              .name {
+                display: block;
+                position: relative;
+                left: 0;
+                top: 0;
+                width: 100%;
+                padding-left: 0;
+                margin-top: 10px;
+                font-size: 22px;
+              }
+
+              .work {
+                display: block;
+                position: relative;
+                left: 0;
+                top: 0;
+                width: 100%;
+                padding-left: 0;
+                box-sizing: border-box;
+                font-size: 20px;
+              }
+
+              .member-description, .member-description-last {
+                display: block;
+                position: relative;
+                left: 0;
+                top: 0;
+                width: 100%;
+                padding-left: 0;
+                box-sizing: border-box;
+                font-size: 18px;
+              }
+            }
           }
         }
       }
