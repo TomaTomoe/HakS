@@ -236,19 +236,24 @@
 // }
 
 body {
-  width: 100vh;
+  width: 100%;
 
   .hk-header.hk-tablet {
     padding: 0 80px 21px;
+    right: auto;
+    margin: 0;
+    width: 100vw;
+    height: 81px;
+    box-sizing: border-box;
 
     .hk-logo {
-      left: 10px;
-      top: 5px;
+      left: 15px;
+      top: 15px;
       width: 60px;
     }
 
     .hk-subscribe {
-      margin: 22px auto auto;
+      margin: 30px auto auto;
       text-align: center;
       width: 150px;
 
@@ -262,36 +267,46 @@ body {
     }
   }
 
+  .hk-navigation {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 7;
+    bottom: 0;
+    width: 100vw;
+    right: auto;
+    left: 0;
+    background: #303030;
+
+    .hk-tablet-menu_header {
+      .hk-social {
+        width: calc(100vw - 82px);
+
+        .hk-social-link {
+          width: 12%;
+        }
+      }
+    }
+
+    .hk-nav-menu {
+      margin-top: 90px;
+
+      li {
+        padding: 1.7vh 0;
+
+        .hk-nav-item {
+          font-size: 16pt;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
   #fullpage {
     height: 100%;
     width: 100vw;
 
     .hk-main {
-      .hk-navigation {
-        width: 100vw;
-
-        .hk-social {
-          width: calc(100vw - 82px);
-
-          .hk-social-link {
-            width: 12%;
-          }
-        }
-
-        .hk-nav-menu {
-          margin-top: 90px;
-
-          li {
-            padding: 1.7vh 0;
-
-            .hk-nav-item {
-              font-size: 16pt;
-              margin-right: 20px;
-            }
-          }
-        }
-      }
-
       .hk-central_block {
         margin: 0;
 
@@ -361,11 +376,12 @@ body {
 
       .hk-central_block {
         margin: 0;
+        height: 100%;
 
         h2 {
           font-size: 26px;
           padding-left: 15px;
-          margin-top: 0;
+          margin-top: 40px;
         }
 
         hr {
@@ -395,9 +411,13 @@ body {
       padding-bottom: 20px;
 
       .hk-central_block {
+        min-height: 100%;
+        margin: 0;
+
         .not-relative {
           h2 {
             font-size: 26px;
+            margin-top: 40px;
           }
 
           .hk-timeline-figure {
@@ -425,7 +445,8 @@ body {
       .not-relative {
         h2 {
           font-size: 26px;
-          margin-top: 10px;
+          margin-top: 40px;
+          padding: 0 30px;
         }
 
         .hk-hacken-figure {
@@ -474,14 +495,72 @@ body {
       }
     }
   }
-  // .hk-about {
-  //   height: 100%;
-  //   .hk-central_block {
-  //     margin: 0;
-  //     h2 {
-  //       font-size: 26px;
-  //       padding-left: 15px;
-  //     }
-  //   }
-  // }
+
+  .hk-token_sale {
+    min-height: 100%;
+
+    .fp-tableCell {
+      min-height: 100%;
+
+      .hk-central_block {
+        height: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0 30px;
+
+        h2 {
+          margin: 0;
+          font-size: 26px;
+        }
+
+        .hk-token_sale-figure {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .hk-burning {
+    min-height: 100%;
+
+    .hk-central_block {
+      height: 100%;
+      padding: 0 30px;
+      margin: 0;
+
+      h2 {
+        font-size: 26px;
+      }
+
+      .hk-burning-quote_text {
+        font-size: 22px;
+        line-height: 32px;
+      }
+
+      p.hk-burning-descr {
+        font-size: 16px;
+        line-height: 22px;
+        font-size: 16px;
+        padding-left: 0; 
+      }
+    }
+  }
+}
+
+.hk-bonus_timer-time {
+  height: calc(100% - 145px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  margin: auto;
+}
+
+.hk-bonus_timer {
+  height: 340px;
+  width: 320px;
+  border: 10px solid #31a4b2;
+  display: block;
+  float: left;
+  position: relative;
 }
