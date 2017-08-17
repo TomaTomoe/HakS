@@ -391,7 +391,7 @@ p.hk-about-descr {
 .hacken-modal-container,
 .main-modal-container,
 .video-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 8;
   background: black;

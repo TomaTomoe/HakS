@@ -5,6 +5,37 @@ body {
     .modal-form-desc {
       font-size: 24px;
     }
+
+    .main-modal-content {
+      width: 90%;
+      height: 70%;
+    }
+  }
+
+  .advisor-modal-container {
+    .advisor-modal-content {
+      width: 90%;
+      height: 80%;
+    }
+  }
+
+  .hacken-modal-container {
+    .hacken-modal-content {
+      width: 90%;
+      height: 90%;
+
+      .hacken-question {
+        font-size: 22px;
+      }
+
+      .hacken-answer {
+        font-size: 14px;
+      }
+
+      .block-title-with-pagination.hacken {
+        padding-top: 20px;
+      }
+    }
   }
 
   .hk-header.hk-tablet {
@@ -61,7 +92,7 @@ body {
       margin-top: 90px;
 
       li {
-        padding: 1.7vh 0;
+        padding: 1.5vh 0;
 
         .hk-nav-item {
           font-size: 16pt;
@@ -377,14 +408,19 @@ body {
 
         .hk-bounty-pane {
           width: 50%;
+          min-width: 100px;
 
           .hk-bounty_diagramm {
-            height: 140px;
-            width: 140px;
+            height: 100px;
+            width: 100px;
+            font-size: 32px;
+            padding-top: 36px;
           }
 
           h6 {
             font-size: 18px;
+            margin-top: 10px;
+            line-height: 22px;
           }
         }
       }
@@ -587,8 +623,7 @@ body {
           font-size: 26px;
         }
 
-
-        >div {
+        > div {
           padding: 20px 0;
 
           h4 {
@@ -617,18 +652,23 @@ body {
             margin: 5px 0;
             font-weight: 300;
           }
+
           .hk-p-1 {
             background: #2f3f40;
           }
+
           .hk-p-2 {
             background: #355a5b;
           }
+
           .hk-p-3 {
             background: #4c7876;
           }
+
           .hk-p-4 {
             background: #529897;
           }
+
           .hk-p-5 {
             background: #53c2c8;
           }
