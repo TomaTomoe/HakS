@@ -151,7 +151,7 @@ $(document).ready(function () {
             autoScrolling: true,
             onLeave: function(index, nextIndex, direction){
               $('.hk-nav-item').removeClass('active')
-              if (nextIndex === 12) {
+              if (false) {
                 setTimeout(() => $($('.hk-nav-item')[nextIndex-1]).addClass('active'), 100)
               } else {
                 setTimeout(() => $($('.hk-nav-item')[nextIndex-2]).addClass('active'), 100)
@@ -165,8 +165,12 @@ $(document).ready(function () {
 });
 
 function onNavClick(e, i) {
-  // var menu = $('.hk-navigation')[0]
-  // menu.style.display = 'none'
+  let availWidth = window.screen.availWidth;
+
+  if (availWidth <= 1223) {
+    var menu = $('.hk-navigation')[0]
+    menu.style.display = 'none'
+  }
 
   $.fn.fullpage.moveTo(i+1);
 }
