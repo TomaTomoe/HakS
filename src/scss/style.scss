@@ -14,7 +14,6 @@ body {
   position: relative;
 }
 /*SLIDE 1*/
-
 .hk-main {
   background-color: #282828;
 }
@@ -32,6 +31,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .hk-subscribe {
+    margin-top: 20px;
+    display: block;
+    color: #ffffff;
+    padding: 12px 24px;
+    background: #28a4b3;
+
+    .hk-subscribe-icon {
+      color: #ffffff;
+    }
+  }
+
+  .hk-become {
+    margin-top: 20px;
+  }
 }
 
 .hk-become,
@@ -329,7 +344,6 @@ body {
   padding-left: 2vw;
 }
 /*SLIDE 2*/
-
 .hk-about {
   background-color: #303030;
 }
@@ -514,7 +528,6 @@ p.hk-about-descr {
   transform: translate(-50%, -50%);
 }
 /*SLIDE 3*/
-
 .hk-timeline {
   background-color: #282828;
 }

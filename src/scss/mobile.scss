@@ -577,6 +577,20 @@ body {
 
       .hk-header-last {
         padding: 0 15px 10px;
+        display: block;
+        .hk-subscribe {
+          display: block;
+          color: #ffffff;
+          padding: 12px 24px;
+          background: #28a4b3;
+
+          .hk-subscribe-icon {
+            color: #ffffff;
+          }
+        }
+        .hk-become {
+          margin-top: 20px;
+        }
       }
     }
   }
