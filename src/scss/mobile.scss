@@ -520,6 +520,34 @@ body {
     }
   }
 
+  .hk-details {
+    min-height: 100%;
+
+    .hk-central_block {
+      height: 100%;
+      min-height: 100%;
+      margin: 0;
+      padding: 0 30px 50px;
+
+      h2 {
+        font-size: 26px;
+      }
+
+      .hk-details-quote_text {
+        font-size: 22px;
+        line-height: 32px;
+      }
+
+      .hk-details-panes_container {
+        float: none;
+
+        .hk-details-pane {
+          width: 100%;
+        }
+      }
+    }
+  }
+
   .hk-burning {
     min-height: 100%;
 
@@ -541,7 +569,7 @@ body {
         font-size: 16px;
         line-height: 22px;
         font-size: 16px;
-        padding-left: 0; 
+        padding-left: 0;
       }
     }
   }
