@@ -512,6 +512,7 @@ body {
   }
 
   .hk-partners {
+
     min-height: 100%;
 
     .hk-central_block {
@@ -578,6 +579,9 @@ body {
       .hk-header-last {
         padding: 0 15px 10px;
         display: block;
+        position: relative;
+        z-index: 5;
+
         .hk-subscribe {
           display: block;
           color: #ffffff;
