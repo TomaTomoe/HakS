@@ -14,6 +14,7 @@ body {
   position: relative;
 }
 /*SLIDE 1*/
+
 .hk-main {
   background-color: #282828;
 }
@@ -328,6 +329,7 @@ body {
   padding-left: 2vw;
 }
 /*SLIDE 2*/
+
 .hk-about {
   background-color: #303030;
 }
@@ -512,6 +514,7 @@ p.hk-about-descr {
   transform: translate(-50%, -50%);
 }
 /*SLIDE 3*/
+
 .hk-timeline {
   background-color: #282828;
 }
@@ -1686,6 +1689,16 @@ h2+hr {
 
   .team-slider {
     margin-top: 10px;
+  }
+}
+
+.hk-become {
+  color: #ffffff;
+  padding: 12px 24px;
+  background: #28a4b3;
+
+  .hk-subscribe-icon {
+    color: #ffffff;
   }
 }
 @media all and (min-width: 1224px) {
