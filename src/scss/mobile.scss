@@ -548,6 +548,39 @@ body {
     }
   }
 
+  .hk-bonuses {
+    min-height: 100%;
+
+    .hk-central_block {
+      margin: 0;
+      height: 100%;
+
+      h2 {
+        font-size: 26px;
+      }
+
+      p {
+        font-size: 22px;
+      }
+
+      .hk-bonuses-figure {
+        height: 100%;
+
+        .hk-bonus_timer {
+          padding: 30px 0;
+
+          .hk-bonus_timer-time {
+            width: 100%;
+          }
+        }
+
+        .hk-bonus_circle {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
   .hk-burning {
     min-height: 100%;
 
