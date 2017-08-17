@@ -1,242 +1,11 @@
-// #fullpage {
-//   .hk-screen {
-//     height: 100%;
-//
-//     .hk-central_block {
-//       height: 100%;
-//       margin: 0 14px;;
-//     }
-//   }
-//
-//
-//
-//   .hk-about {
-//     &::after {
-//       background-image: url(./../img/bg-slide-2.png);
-//     }
-//     .hk-central_block {
-//       > div {
-//         > h2 {
-//           font-size: 26px;
-//         }
-//         > hr {
-//           margin: 20px 0;
-//         }
-//
-//         .hk-about-quote_text {
-//           font-size: 20px;
-//           padding-left: 20px
-//         }
-//         .hk-about-descr {
-//           padding-left: 0;
-//           font-size: 16px;
-//         }
-//       }
-//     }
-//   }
-//
-//   .hk-timeline {
-//     padding-bottom: 20px;
-//     .hk-central_block {
-//       .not-relative {
-//         h2 {
-//           font-size: 26px;
-//         }
-//         .hk-timeline-figure {
-//           display: none;
-//         }
-//         .hk-timeline-figure-mobile {
-//           display: block;
-//           background-image: url(./../img/timeline-ilustration.png);
-//           min-height: 435px;
-//           background-repeat: no-repeat;
-//           background-position: center;
-//         }
-//       }
-//     }
-//   }
-//
-//   .hk-hacken {
-//     min-height: 500px;
-//
-//     .hk-central_block {
-//
-//       .not-relative {
-//         h2 {
-//           font-size: 26px;
-//           margin-top: 10px;
-//         }
-//         .hk-hacken-figure {
-//           padding-right: 14px;
-//
-//           height: 308px;
-//           background: url(../img/screen-4-content-image.png);
-//           background-repeat: no-repeat;
-//           background-position: center;
-//           div {
-//             font-size: 12px;
-//           }
-//
-//           #hacken-1 {
-//             top: 80px;
-//             left: 280px;
-//           }
-//
-//           #hacken-2 {
-//             top: 110px;
-//             right: 285px;
-//           }
-//
-//           #hacken-3 {
-//             top: 186px;
-//             left: 311px;
-//           }
-//
-//           #hacken-4 {
-//             bottom: 26px;
-//             right: 280px;
-//           }
-//
-//           #hacken-5 {
-//             bottom: 12px;
-//             left: 282px;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-//
-// .hk-header.hk-tablet {
-//   position: fixed;
-//   z-index: 6;
-//   left: 0;
-//   right: 0;
-//   margin: 0;
-//   background: #282828;
-//   height: 45px;
-//   padding: 0;
-//   display: flex;
-//   justify-content: space-between;
-//
-//   .hk-logo {
-//     position: initial;
-//     padding: 14px 0 0 14px;
-//     width: 40px;
-//
-//     > img {
-//       width: 40px;
-//     }
-//   }
-//
-//   .hk-subscribe {
-//     margin-top: 0px;
-//
-//     .hk-subscribe-icon {
-//       font-size: 20px;
-//     }
-//
-//     .hk-subscribe-link {
-//       display: none;
-//     }
-//   }
-//
-//   #hk-tablet_menu {
-//     position: initial;
-//     padding: 10px 14px 10px 14px;
-//   }
-//
-//   #hk-language-select {
-//     position: initial;
-//     margin: 0;
-//     font-size: 14px;
-//   }
-// }
-//
-// .section-home {
-//   .hk-central_block {
-//     margin: 0 0 0 14px;
-//
-//     .main-page-links {
-//       justify-content: space-around;
-//       padding: 0 25px 0 0px;
-//       a {
-//         margin: 0;
-//       }
-//     }
-//
-//     > div {
-//       height: calc(100vh - 135px);
-//       width: 100%;
-//
-//       h1 {
-//         font-size: 27px;
-//       }
-//
-//       p {
-//         font-size: 17px;
-//       }
-//     }
-//   }
-//
-//   .hk-timer {
-//     height: 90px;
-//     display: flex;
-//
-//     .hk-time {
-//       display: flex;
-//       padding: 0;
-//       justify-content: center;
-//       align-items: center;
-//       flex-direction: column;
-//       min-width: 200px;
-//       height: 90px;
-//
-//       .hk-time-header {
-//         padding: 0 0 5px 0;
-//         font-size: 16px;
-//       }
-//
-//       .hk-bonus_timer-time__main {
-//         height: auto;
-//         font-size: 16px;
-//
-//         .hk-bonus_timer-timetick__main {
-//           min-width: 50px;
-//
-//           .timetick-time {
-//             font-size: 16px;
-//           }
-//           .timetick-desc {
-//             font-size: 12px;
-//           }
-//         }
-//
-//
-//       }
-//     }
-//
-//     .hk-amount {
-//       height: 90px;
-//
-//       .hk-amount-header {
-//         padding-right: 10px;
-//         width: auto;
-//         font-size: 17px;
-//       }
-//       .hk-amount-number {
-//         position: absolute;
-//         right: 15px;
-//         bottom: 15px;
-//         padding: 0;
-//         font-size: 16px;
-//       }
-//     }
-//   }
-// }
-
 body {
   width: 100%;
+
+  .main-modal-container {
+    .modal-form-desc {
+      font-size: 24px;
+    }
+  }
 
   .hk-header.hk-tablet {
     padding: 0 80px 21px;
@@ -797,6 +566,72 @@ body {
         line-height: 22px;
         font-size: 16px;
         padding-left: 0;
+      }
+    }
+  }
+
+  .hk-milestones {
+    min-height: 100%;
+
+    .hk-central_block {
+      height: 100%;
+      padding: 0 30px;
+      margin: 0;
+
+      .not-relative {
+        margin-top: 30px;
+        margin-left: 0;
+
+        h2 {
+          font-size: 26px;
+        }
+
+
+        >div {
+          padding: 20px 0;
+
+          h4 {
+            color: #53c3c8;
+            font-size: 18px;
+            font-weight: 500;
+            display: inline-block;
+            margin: 0;
+            width: 60%;
+            line-height: 22px;
+          }
+
+          .hk-money {
+            float: right;
+            width: 40%;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: right;
+          }
+
+          p {
+            line-height: 24px;
+            font-size: 16px;
+            padding: 10px 0 10px 15px;
+            display: block;
+            margin: 5px 0;
+            font-weight: 300;
+          }
+          .hk-p-1 {
+            background: #2f3f40;
+          }
+          .hk-p-2 {
+            background: #355a5b;
+          }
+          .hk-p-3 {
+            background: #4c7876;
+          }
+          .hk-p-4 {
+            background: #529897;
+          }
+          .hk-p-5 {
+            background: #53c2c8;
+          }
+        }
       }
     }
   }
