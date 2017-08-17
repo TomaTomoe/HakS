@@ -1,56 +1,416 @@
-#fullpage {
-  .hk-screen {
-    height: 100%;
+// #fullpage {
+//   .hk-screen {
+//     height: 100%;
+//
+//     .hk-central_block {
+//       height: 100%;
+//       margin: 0 14px;;
+//     }
+//   }
+//
+//
+//
+//   .hk-about {
+//     &::after {
+//       background-image: url(./../img/bg-slide-2.png);
+//     }
+//     .hk-central_block {
+//       > div {
+//         > h2 {
+//           font-size: 26px;
+//         }
+//         > hr {
+//           margin: 20px 0;
+//         }
+//
+//         .hk-about-quote_text {
+//           font-size: 20px;
+//           padding-left: 20px
+//         }
+//         .hk-about-descr {
+//           padding-left: 0;
+//           font-size: 16px;
+//         }
+//       }
+//     }
+//   }
+//
+//   .hk-timeline {
+//     padding-bottom: 20px;
+//     .hk-central_block {
+//       .not-relative {
+//         h2 {
+//           font-size: 26px;
+//         }
+//         .hk-timeline-figure {
+//           display: none;
+//         }
+//         .hk-timeline-figure-mobile {
+//           display: block;
+//           background-image: url(./../img/timeline-ilustration.png);
+//           min-height: 435px;
+//           background-repeat: no-repeat;
+//           background-position: center;
+//         }
+//       }
+//     }
+//   }
+//
+//   .hk-hacken {
+//     min-height: 500px;
+//
+//     .hk-central_block {
+//
+//       .not-relative {
+//         h2 {
+//           font-size: 26px;
+//           margin-top: 10px;
+//         }
+//         .hk-hacken-figure {
+//           padding-right: 14px;
+//
+//           height: 308px;
+//           background: url(../img/screen-4-content-image.png);
+//           background-repeat: no-repeat;
+//           background-position: center;
+//           div {
+//             font-size: 12px;
+//           }
+//
+//           #hacken-1 {
+//             top: 80px;
+//             left: 280px;
+//           }
+//
+//           #hacken-2 {
+//             top: 110px;
+//             right: 285px;
+//           }
+//
+//           #hacken-3 {
+//             top: 186px;
+//             left: 311px;
+//           }
+//
+//           #hacken-4 {
+//             bottom: 26px;
+//             right: 280px;
+//           }
+//
+//           #hacken-5 {
+//             bottom: 12px;
+//             left: 282px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+//
+// .hk-header.hk-tablet {
+//   position: fixed;
+//   z-index: 6;
+//   left: 0;
+//   right: 0;
+//   margin: 0;
+//   background: #282828;
+//   height: 45px;
+//   padding: 0;
+//   display: flex;
+//   justify-content: space-between;
+//
+//   .hk-logo {
+//     position: initial;
+//     padding: 14px 0 0 14px;
+//     width: 40px;
+//
+//     > img {
+//       width: 40px;
+//     }
+//   }
+//
+//   .hk-subscribe {
+//     margin-top: 0px;
+//
+//     .hk-subscribe-icon {
+//       font-size: 20px;
+//     }
+//
+//     .hk-subscribe-link {
+//       display: none;
+//     }
+//   }
+//
+//   #hk-tablet_menu {
+//     position: initial;
+//     padding: 10px 14px 10px 14px;
+//   }
+//
+//   #hk-language-select {
+//     position: initial;
+//     margin: 0;
+//     font-size: 14px;
+//   }
+// }
+//
+// .section-home {
+//   .hk-central_block {
+//     margin: 0 0 0 14px;
+//
+//     .main-page-links {
+//       justify-content: space-around;
+//       padding: 0 25px 0 0px;
+//       a {
+//         margin: 0;
+//       }
+//     }
+//
+//     > div {
+//       height: calc(100vh - 135px);
+//       width: 100%;
+//
+//       h1 {
+//         font-size: 27px;
+//       }
+//
+//       p {
+//         font-size: 17px;
+//       }
+//     }
+//   }
+//
+//   .hk-timer {
+//     height: 90px;
+//     display: flex;
+//
+//     .hk-time {
+//       display: flex;
+//       padding: 0;
+//       justify-content: center;
+//       align-items: center;
+//       flex-direction: column;
+//       min-width: 200px;
+//       height: 90px;
+//
+//       .hk-time-header {
+//         padding: 0 0 5px 0;
+//         font-size: 16px;
+//       }
+//
+//       .hk-bonus_timer-time__main {
+//         height: auto;
+//         font-size: 16px;
+//
+//         .hk-bonus_timer-timetick__main {
+//           min-width: 50px;
+//
+//           .timetick-time {
+//             font-size: 16px;
+//           }
+//           .timetick-desc {
+//             font-size: 12px;
+//           }
+//         }
+//
+//
+//       }
+//     }
+//
+//     .hk-amount {
+//       height: 90px;
+//
+//       .hk-amount-header {
+//         padding-right: 10px;
+//         width: auto;
+//         font-size: 17px;
+//       }
+//       .hk-amount-number {
+//         position: absolute;
+//         right: 15px;
+//         bottom: 15px;
+//         padding: 0;
+//         font-size: 16px;
+//       }
+//     }
+//   }
+// }
 
-    .hk-central_block {
-      height: 100%;
-      margin: 0 14px;;
+body {
+  width: 100vh;
+
+  .hk-header.hk-tablet {
+    padding: 0 80px 21px;
+
+    .hk-logo {
+      left: 10px;
+      top: 5px;
+      width: 60px;
     }
-  }
 
+    .hk-subscribe {
+      margin: 22px auto auto;
+      text-align: center;
+      width: 150px;
 
+      .hk-subscribe-icon {
+        display: inline;
+      }
 
-  .hk-about {
-    &::after {
-      background-image: url(./../img/bg-slide-2.png);
-    }
-    .hk-central_block {
-      > div {
-        > h2 {
-          font-size: 26px;
-        }
-        > hr {
-          margin: 20px 0;
-        }
-
-        .hk-about-quote_text {
-          font-size: 20px;
-          padding-left: 20px
-        }
-        .hk-about-descr {
-          padding-left: 0;
-          font-size: 16px;
-        }
+      .hk-subscribe-link {
+        display: none;
       }
     }
   }
 
-  .hk-timeline {
-    padding-bottom: 20px;
-    .hk-central_block {
-      .not-relative {
+  #fullpage {
+    height: 100%;
+    width: 100vw;
+
+    .hk-main {
+      .hk-navigation {
+        width: 100vw;
+
+        .hk-social {
+          width: calc(100vw - 82px);
+
+          .hk-social-link {
+            width: 12%;
+          }
+        }
+
+        .hk-nav-menu {
+          margin-top: 90px;
+
+          li {
+            padding: 1.7vh 0;
+
+            .hk-nav-item {
+              font-size: 16pt;
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+
+      .hk-central_block {
+        margin: 0;
+
+        h1 {
+          font-size: 36px;
+          padding-left: 15px;
+          margin-bottom: 30px;
+        }
+
+        p {
+          font-size: 20px;
+          padding-left: 15px;
+          margin-bottom: 30px;
+        }
+
+        .main-page-links {
+          margin-bottom: 70px;
+          padding-left: 15px;
+
+          a {
+            margin-right: 30px;
+          }
+        }
+      }
+
+      .hk-timer {
+        .hk-time {
+          padding-left: 0;
+          text-align: center;
+          width: 60%;
+
+          .hk-time-header {
+            font-size: 16px;
+          }
+
+          .timetick-time {
+            font-size: 22px;
+          }
+
+          .timetick-desc {
+            font-size: 10px;
+          }
+        }
+
+        .hk-amount {
+          text-align: center;
+
+          .hk-amount-header {
+            width: 100%;
+            padding-left: 0;
+            font-size: 16px;
+            display: block;
+            float: none;
+          }
+
+          .hk-amount-number {
+            float: none;
+            padding: 15px 0 0;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    .hk-about {
+      height: 100%;
+
+      .hk-central_block {
+        margin: 0;
+
         h2 {
           font-size: 26px;
+          padding-left: 15px;
+          margin-top: 0;
         }
-        .hk-timeline-figure {
-          display: none;
+
+        hr {
+          margin: 20px 15px;
         }
-        .hk-timeline-figure-mobile {
-          display: block;
-          background-image: url(./../img/timeline-ilustration.png);
-          min-height: 435px;
-          background-repeat: no-repeat;
-          background-position: center;
+
+        .hk-about-quote_text {
+          font-size: 20px;
+          padding-left: 20px;
+          line-height: 26px;
+        }
+
+        .hk-about-quote_text:before {
+          top: 120px;
+          left: 0;
+        }
+
+        .hk-about-descr {
+          padding-left: 0;
+          font-size: 16px;
+          padding: 0 15px;
+        }
+      }
+    }
+
+    .hk-timeline {
+      padding-bottom: 20px;
+
+      .hk-central_block {
+        .not-relative {
+          h2 {
+            font-size: 26px;
+          }
+
+          .hk-timeline-figure {
+            display: none;
+          }
+
+          .hk-timeline-figure-mobile {
+            display: block;
+            background-image: url("./../img/timeline-ilustration.png");
+            min-height: 435px;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
         }
       }
     }
@@ -60,177 +420,68 @@
     min-height: 500px;
 
     .hk-central_block {
+      margin: 0;
 
       .not-relative {
         h2 {
           font-size: 26px;
           margin-top: 10px;
         }
+
         .hk-hacken-figure {
           padding-right: 14px;
-
-          height: 308px;
-          background: url(../img/screen-4-content-image.png);
+          height: 355px;
+          width: 320px;
+          background: url("../img/screen-4-content-image.png");
+          background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
+
           div {
             font-size: 12px;
           }
 
           #hacken-1 {
-            top: 80px;
-            left: 280px;
+            top: 48px;
+            left: 24px;
+            font-size: 22px;
           }
 
           #hacken-2 {
-            top: 110px;
-            right: 285px;
+            top: 121px;
+            right: 18px;
+            font-size: 20px;
           }
 
           #hacken-3 {
-            top: 186px;
-            left: 311px;
+            top: 209px;
+            left: 39px;
+            font-size: 20px;
           }
 
           #hacken-4 {
-            bottom: 26px;
-            right: 280px;
+            bottom: 37px;
+            right: 14px;
+            font-size: 18px;
           }
 
           #hacken-5 {
             bottom: 12px;
-            left: 282px;
-          }
-        }
-      }
-    }
-  }
-}
-
-.hk-header.hk-tablet {
-  position: fixed;
-  z-index: 6;
-  left: 0;
-  right: 0;
-  margin: 0;
-  background: #282828;
-  height: 45px;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-
-  .hk-logo {
-    position: initial;
-    padding: 14px 0 0 14px;
-    width: 40px;
-
-    > img {
-      width: 40px;
-    }
-  }
-
-  .hk-subscribe {
-    margin-top: 0px;
-
-    .hk-subscribe-icon {
-      font-size: 20px;
-    }
-
-    .hk-subscribe-link {
-      display: none;
-    }
-  }
-
-  #hk-tablet_menu {
-    position: initial;
-    padding: 10px 14px 10px 14px;
-  }
-
-  #hk-language-select {
-    position: initial;
-    margin: 0;
-    font-size: 14px;
-  }
-}
-
-.section-home {
-  .hk-central_block {
-    margin: 0 0 0 14px;
-
-    .main-page-links {
-      justify-content: space-around;
-      padding: 0 25px 0 0px;
-      a {
-        margin: 0;
-      }
-    }
-
-    > div {
-      height: calc(100vh - 135px);
-      width: 100%;
-
-      h1 {
-        font-size: 27px;
-      }
-
-      p {
-        font-size: 17px;
-      }
-    }
-  }
-
-  .hk-timer {
-    height: 90px;
-    display: flex;
-
-    .hk-time {
-      display: flex;
-      padding: 0;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      min-width: 200px;
-      height: 90px;
-
-      .hk-time-header {
-        padding: 0 0 5px 0;
-        font-size: 16px;
-      }
-
-      .hk-bonus_timer-time__main {
-        height: auto;
-        font-size: 16px;
-
-        .hk-bonus_timer-timetick__main {
-          min-width: 50px;
-
-          .timetick-time {
+            left: 27px;
             font-size: 16px;
           }
-          .timetick-desc {
-            font-size: 12px;
-          }
         }
-
-
-      }
-    }
-
-    .hk-amount {
-      height: 90px;
-
-      .hk-amount-header {
-        padding-right: 10px;
-        width: auto;
-        font-size: 17px;
-      }
-      .hk-amount-number {
-        position: absolute;
-        right: 15px;
-        bottom: 15px;
-        padding: 0;
-        font-size: 16px;
       }
     }
   }
+  // .hk-about {
+  //   height: 100%;
+  //   .hk-central_block {
+  //     margin: 0;
+  //     h2 {
+  //       font-size: 26px;
+  //       padding-left: 15px;
+  //     }
+  //   }
+  // }
 }
