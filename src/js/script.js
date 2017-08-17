@@ -5,6 +5,10 @@ $(document).ready(function () {
         breakpoints: {
           1223: {
             slidesPerView: 3
+          },
+          767: {
+            slidesPerView: 2,
+            spaceBetween: 10
           }
         },
         paginationClickable: true,
@@ -39,6 +43,10 @@ $(document).ready(function () {
         breakpoints: {
           1223: {
             slidesPerView: 2
+          },
+          767: {
+            slidesPerView: 1,
+            spaceBetween: 0,
           }
         },
         paginationClickable: true,
