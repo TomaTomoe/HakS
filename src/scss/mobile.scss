@@ -177,6 +177,10 @@ body {
     .hk-about {
       height: 100%;
 
+      >div {
+        vertical-align: baseline;
+      }
+
       .hk-central_block {
         margin: 0;
         height: 100%;
@@ -726,4 +730,8 @@ body {
   display: block;
   float: left;
   position: relative;
+}
+.hk-about .hk-central_block,
+.hk-hacken .hk-central_block {
+display: block !important;
 }
