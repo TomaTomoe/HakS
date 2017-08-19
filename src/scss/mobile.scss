@@ -216,6 +216,7 @@ body {
       .hk-central_block {
         min-height: 100%;
         margin: 0;
+        height: auto;
 
         .not-relative {
           h2 {
@@ -244,6 +245,7 @@ body {
 
     .hk-central_block {
       margin: 0;
+      height: auto;
 
       .not-relative {
         h2 {
@@ -318,6 +320,9 @@ body {
 
         .hk-token_sale-figure {
           margin-top: 10px;
+          @media all and (orientation: landscape){
+            margin-bottom: 30px;
+          }
         }
       }
     }
