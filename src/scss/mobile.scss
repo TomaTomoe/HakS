@@ -1,6 +1,9 @@
 body {
   width: 100%;
-
+  .fp-section,
+  .fp-tableCell{
+    height: auto !important;
+  }
   .main-modal-container {
     .modal-form-desc {
       font-size: 24px;
