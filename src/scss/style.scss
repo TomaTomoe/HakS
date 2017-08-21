@@ -1769,8 +1769,16 @@ h2+hr {
     margin-top: 50px;
   }
 
-  .hk-timeline h2, .hk-hacken h2 {
+  .hk-timeline h2, .hk-hacken h2, .hk-bonuses h2 {
     margin-top: 0;
+  }
+  .advisors-slider .swiper-wrapper {
+    margin-top: 1vh;
+  }
+  .hk-bounty_diagramm {
+    height: 130px;
+    width: 130px;
+    padding-top: 52px;
   }
 }
 @media all and (min-width: 1224px) {
