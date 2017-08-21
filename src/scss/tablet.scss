@@ -197,17 +197,19 @@ ul.hk-social {
 
   .hk-amount {
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: 0;
 
     .hk-amount-header {
-      width: 50%;
       display: inline-block;
       float: left;
     }
 
     .hk-amount-number {
+      padding: 0;
       float: right;
-      padding-right: 50px;
     }
   }
 

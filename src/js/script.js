@@ -67,7 +67,7 @@ $(document).ready(function () {
     });
 
     window.hackenSlider = swiperHackenModal;
-   var countDownDate = new Date("Sep 5, 2017 15:37:25").getTime();
+   var countDownDate = new Date("Sep 11, 2017 23:59:59").getTime();
 
 // Update the count down every 1 second
       var x = setInterval(function() {
