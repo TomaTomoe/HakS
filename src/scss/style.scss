@@ -1349,6 +1349,7 @@ h2+hr {
 
 .hk-partners h2 {
   text-align: left;
+  margin-top: 10px;
 }
 
 .hk-partners .hk-header {
@@ -1738,7 +1739,7 @@ h2+hr {
 
   .team-image-active,
   .team-slider .swiper-slide .team-image {
-    width: 180px;
+    width: 150px;
     height: auto;
   }
 
@@ -1769,8 +1770,55 @@ h2+hr {
     margin-top: 50px;
   }
 
-  .hk-timeline h2, .hk-hacken h2 {
+  .hk-timeline h2, .hk-hacken h2, .hk-bonuses h2 {
     margin-top: 0;
+  }
+
+  .advisors-slider .swiper-wrapper {
+    margin-top: 1vh;
+  }
+
+  .hk-bounty_diagramm {
+    height: 130px;
+    width: 130px;
+    padding-top: 52px;
+  }
+
+  .hk-nav-menu {
+    margin-top: calc(60px + 2vh);
+  }
+
+  .hk-header-last .hk-subscribe,
+  .hk-header-last .hk-become {
+    margin-top: 1em;
+  }
+
+  .team-slider .name {
+    margin-top: 5px;
+  }
+
+  .member-description {
+    line-height: 16px;
+  }
+
+  .hk-main .hk-subscribe {
+    margin-top: 0;
+  }
+
+  .hk-main h1 {
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+
+  .hk-main .hk-header {
+    padding-left: 0;
+    margin: 0 80px;
+  }
+  .hacken-modal-content {
+    height: 90%;
+  }
+  .advisor-modal-content {
+    height: 60%;
   }
 }
 @media all and (min-width: 1224px) {
