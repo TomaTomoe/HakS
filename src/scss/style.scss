@@ -1571,9 +1571,16 @@ h2+hr {
   font-weight: 100;
   margin-top: 13px;
 }
+
+.hk-team.hk-milestones .hk-central_block,
+.hk-partners.hk-milestones .hk-central_block {
+  align-items: center;
+}
+
 @media (min-width: 1224px) and (max-width: 1539px) {
   .hk-header {
-    padding-left: 80px;
+    padding-left: 0;
+    margin: 0 80px;
   }
 
   .hk-central_block {
